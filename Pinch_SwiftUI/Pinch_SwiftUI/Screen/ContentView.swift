@@ -23,6 +23,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             ZStack {
+                Color.clear
                 Image("magazine-front-cover")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
@@ -65,6 +66,12 @@ struct ContentView: View {
 //                    부드럽게 1초 동안 isAnimating이 true인 동안 이미지 나타나도록 한다.
                 }
             })
+            .overlay(
+                InfoPanelView(scale: imageScale, offset: imageOffset)
+                    .padding(.horizontal)
+                    .padding(.top, 30)
+                , alignment: .top
+            )
         }
         .navigationViewStyle(.stack)
     }
