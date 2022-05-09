@@ -1,1 +1,0 @@
-# Pinch SwiftUI: Udemy SwiftUI Lecture
