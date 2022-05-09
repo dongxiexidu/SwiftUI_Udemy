@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4A81BBD928293419004AC570 /* InfoPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A81BBD828293419004AC570 /* InfoPanelView.swift */; };
+		4A81BBDB28293B04004AC570 /* ControlImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A81BBDA28293B04004AC570 /* ControlImageView.swift */; };
 		4AA1CA1B2828F5A600D43D36 /* Pinch_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA1CA1A2828F5A600D43D36 /* Pinch_SwiftUIApp.swift */; };
 		4AA1CA1D2828F5A600D43D36 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA1CA1C2828F5A600D43D36 /* ContentView.swift */; };
 		4AA1CA1F2828F5A800D43D36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AA1CA1E2828F5A800D43D36 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		4A81BBD828293419004AC570 /* InfoPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPanelView.swift; sourceTree = "<group>"; };
+		4A81BBDA28293B04004AC570 /* ControlImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlImageView.swift; sourceTree = "<group>"; };
 		4AA1CA172828F5A600D43D36 /* Pinch_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pinch_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AA1CA1A2828F5A600D43D36 /* Pinch_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pinch_SwiftUIApp.swift; sourceTree = "<group>"; };
 		4AA1CA1C2828F5A600D43D36 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				4A81BBD828293419004AC570 /* InfoPanelView.swift */,
+				4A81BBDA28293B04004AC570 /* ControlImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A81BBDB28293B04004AC570 /* ControlImageView.swift in Sources */,
 				4AA1CA1D2828F5A600D43D36 /* ContentView.swift in Sources */,
 				4AA1CA1B2828F5A600D43D36 /* Pinch_SwiftUIApp.swift in Sources */,
 				4A81BBD928293419004AC570 /* InfoPanelView.swift in Sources */,
