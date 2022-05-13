@@ -13,7 +13,7 @@ struct Fruits_SwiftUIApp: App {
     @AppStorage("isOnboarding") var isOnboarding: Bool = true
     var body: some Scene {
         WindowGroup {
-            if isOnboarding {
+            if isOnboarding == true {
                 OnboardingView()
             } else {
                 ContentView()
