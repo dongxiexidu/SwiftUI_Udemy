@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A0C7314282F84F000B358B2 /* SettingsLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0C7313282F84F000B358B2 /* SettingsLabelView.swift */; };
+		4A66887E282F812C00F39A43 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A66887D282F812C00F39A43 /* SettingsView.swift */; };
 		4A81BBEE28296378004AC570 /* Fruits_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A81BBED28296378004AC570 /* Fruits_SwiftUIApp.swift */; };
 		4A81BBF028296378004AC570 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A81BBEF28296378004AC570 /* ContentView.swift */; };
 		4A81BBF22829637A004AC570 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A81BBF12829637A004AC570 /* Assets.xcassets */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A0C7313282F84F000B358B2 /* SettingsLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLabelView.swift; sourceTree = "<group>"; };
+		4A66887D282F812C00F39A43 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		4A81BBEA28296378004AC570 /* Fruits_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fruits_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A81BBED28296378004AC570 /* Fruits_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruits_SwiftUIApp.swift; sourceTree = "<group>"; };
 		4A81BBEF28296378004AC570 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +100,7 @@
 				4A81BBEF28296378004AC570 /* ContentView.swift */,
 				4A8A8D22282E4F1B00E39104 /* OnboardingView.swift */,
 				4A900F25282E9F5400918C51 /* FruitDetailView.swift */,
+				4A66887D282F812C00F39A43 /* SettingsView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -109,6 +114,7 @@
 				4A900F27282EA2B400918C51 /* FruitHeaderView.swift */,
 				4A900F29282EA4F000918C51 /* SourceLinkView.swift */,
 				4A900F2B282EA7CD00918C51 /* FruitNutrientsView.swift */,
+				4A0C7313282F84F000B358B2 /* SettingsLabelView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -209,8 +215,10 @@
 				4A81BBF028296378004AC570 /* ContentView.swift in Sources */,
 				4A900F28282EA2B400918C51 /* FruitHeaderView.swift in Sources */,
 				4A8A8D23282E4F1B00E39104 /* OnboardingView.swift in Sources */,
+				4A0C7314282F84F000B358B2 /* SettingsLabelView.swift in Sources */,
 				4A900F1F282E8D7D00918C51 /* FruitModel.swift in Sources */,
 				4A81BBEE28296378004AC570 /* Fruits_SwiftUIApp.swift in Sources */,
+				4A66887E282F812C00F39A43 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
