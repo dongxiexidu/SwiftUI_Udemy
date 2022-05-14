@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SettingsView: View {
     // MARK: - PROPERTIES
-    @Environment(\.dismiss) var dismiss
+    @Environment(\.presentationMode) var presentationMode
     
     // MARKL - BODY
     var body: some View {
@@ -37,6 +37,20 @@ struct SettingsView: View {
                     // MARK: - SECTION2
                     
                     // MARK: - SECTION3
+                    GroupBox(
+                        label:
+                            SettingsLabelView(labelText: "Application", labelImage: "app.iphone")
+                    ) {
+                        SettingsRowView(name: "Developer", content: "Junyeong")
+                        SettingsRowView(name: "Designer", content: "Robert Petras")
+                        SettingsRowView(name: "Compatibility", content: "iOS 14")
+                        SettingsRowView(name: "Website", linkLabel: "SwfitUI MasterClass", linkDestination: "swiftuimasterclass.com")
+                        SettingsRowView(name: "Twitter", linkLabel: "@Robert Petras", linkDestination: "twitter.com/robertpetras")
+                        SettingsRowView(name: "SwfitUI", content: "2.0")
+                        SettingsRowView(name: "Version", content: "1.1.0")
+                        
+                    }
+                    
                 } //: VSTACK
                 .navigationTitle("Settings")
                 .navigationBarTitleDisplayMode(.large)
@@ -44,7 +58,7 @@ struct SettingsView: View {
                 .toolbar {
                     ToolbarItem(placement: .navigationBarTrailing) {
                         Button(action: {
-                            dismiss()
+                            presentationMode.wrappedValue.dismiss()
                         }) {
                             Image(systemName: "xmark")
                         }
