@@ -36,6 +36,7 @@ struct ContentView: View {
                 }
             }
         } //: NAV
+        .navigationViewStyle(.stack)
     }
 }
 
