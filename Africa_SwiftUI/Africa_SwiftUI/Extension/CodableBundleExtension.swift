@@ -8,7 +8,7 @@
 import Foundation
 
 extension Bundle {
-    func decode(_ file: String) -> [CoverImage] {
+    func decode<T: Codable>(_ file: String) -> T {
         guard let url = self.url(forResource: file, withExtension: nil) else {
             fatalError("Failed to locate \(file) in bundle")
             // guard를 통해 손쉽게 존재 유무 파악 가능
@@ -19,7 +19,7 @@ extension Bundle {
         
         let decoder = JSONDecoder()
         
-        guard let loaded = try? decoder.decode([CoverImage].self, from: data) else {
+        guard let loaded = try? decoder.decode(T.self, from: data) else {
             fatalError("Failed to decode \(file) from bundle.")
             // CoverImage 구조체가 Codable하기 때문에 decoder에서 바로 추출 가능
         }
