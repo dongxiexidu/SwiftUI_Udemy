@@ -47,6 +47,7 @@
 		4AC7273328353E3A0037CB1D /* InsetFactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC7273228353E3A0037CB1D /* InsetFactView.swift */; };
 		4AC72735283540180037CB1D /* InsetMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC72734283540180037CB1D /* InsetMapView.swift */; };
 		4AC72737283542730037CB1D /* ExternalWeblinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC72736283542730037CB1D /* ExternalWeblinkView.swift */; };
+		4AECCA36283785D000DAF3CA /* GridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AECCA35283785D000DAF3CA /* GridItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +93,7 @@
 		4AC7273228353E3A0037CB1D /* InsetFactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetFactView.swift; sourceTree = "<group>"; };
 		4AC72734283540180037CB1D /* InsetMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetMapView.swift; sourceTree = "<group>"; };
 		4AC72736283542730037CB1D /* ExternalWeblinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalWeblinkView.swift; sourceTree = "<group>"; };
+		4AECCA35283785D000DAF3CA /* GridItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +231,7 @@
 				4A17F4DE2835B6CC00AD8EA1 /* VideoPlayerView.swift */,
 				4A61772D28370AA700AFB4B0 /* MapAnnotationView.swift */,
 				4A61772F28370E0600AFB4B0 /* MotionAnimationView.swift */,
+				4AECCA35283785D000DAF3CA /* GridItemView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				4AC72731283539EE0037CB1D /* InsetGalleryView.swift in Sources */,
 				4A17F4E42835BB5600AD8EA1 /* LocationModel.swift in Sources */,
 				4A17F4E22835B7A900AD8EA1 /* VideePlayerHelper.swift in Sources */,
+				4AECCA36283785D000DAF3CA /* GridItemView.swift in Sources */,
 				4A17F4DD2835A8BE00AD8EA1 /* VideoListItem.swift in Sources */,
 				4A3B6157283378EE00D99C0F /* CodableBundleExtension.swift in Sources */,
 				4A61773028370E0600AFB4B0 /* MotionAnimationView.swift in Sources */,
