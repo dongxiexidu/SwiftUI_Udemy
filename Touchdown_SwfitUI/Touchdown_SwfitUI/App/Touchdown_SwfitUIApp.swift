@@ -12,6 +12,8 @@ struct Touchdown_SwfitUIApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(Shop())
+            // 전역으로 Shop class를 "관찰"
         }
     }
 }

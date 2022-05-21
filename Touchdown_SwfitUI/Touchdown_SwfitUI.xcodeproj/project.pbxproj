@@ -42,6 +42,7 @@
 		4AD668DD28390BB6004E013B /* RatingsSizeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD668DC28390BB6004E013B /* RatingsSizeDetailView.swift */; };
 		4AD668DF28390D83004E013B /* QuantityFavoriteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD668DE28390D83004E013B /* QuantityFavoriteDetailView.swift */; };
 		4AD668E128390EC7004E013B /* AddToCartDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD668E028390EC7004E013B /* AddToCartDetailView.swift */; };
+		4AD668E32839254F004E013B /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD668E22839254F004E013B /* Shop.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,7 @@
 		4AD668DC28390BB6004E013B /* RatingsSizeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingsSizeDetailView.swift; sourceTree = "<group>"; };
 		4AD668DE28390D83004E013B /* QuantityFavoriteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantityFavoriteDetailView.swift; sourceTree = "<group>"; };
 		4AD668E028390EC7004E013B /* AddToCartDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToCartDetailView.swift; sourceTree = "<group>"; };
+		4AD668E22839254F004E013B /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +224,7 @@
 				4A858A26283867A2008B4D3D /* Constant.swift */,
 				4AD668D4283906E8004E013B /* WindowArea.swift */,
 				4AD668DA28390A2B004E013B /* CustomShape.swift */,
+				4AD668E22839254F004E013B /* Shop.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				4AD4FCEE2838B22C00609918 /* CodableBundleExtension.swift in Sources */,
 				4A858A0A2838649D008B4D3D /* ContentView.swift in Sources */,
 				4A858A2D28386B94008B4D3D /* LogoView.swift in Sources */,
+				4AD668E32839254F004E013B /* Shop.swift in Sources */,
 				4A858A2928386854008B4D3D /* FooterView.swift in Sources */,
 				4AD668DF28390D83004E013B /* QuantityFavoriteDetailView.swift in Sources */,
 				4AD668C12838BDA4004E013B /* CategoryGridVIew.swift in Sources */,
