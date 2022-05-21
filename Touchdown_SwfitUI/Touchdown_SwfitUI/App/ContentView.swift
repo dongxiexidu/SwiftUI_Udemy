@@ -10,6 +10,16 @@ import SwiftUI
 struct ContentView: View {
     // MARK: - PROPERTIES
     
+    func getSafeAreaTop()->CGFloat{
+        let keyWindow = UIApplication.shared.connectedScenes
+            .filter({$0.activationState == .foregroundActive})
+            .map({$0 as? UIWindowScene})
+            .compactMap({$0})
+            .first?.windows
+            .filter({$0.isKeyWindow}).first
+        return (keyWindow?.safeAreaInsets.top) ?? 0
+    }
+    
     // MARK: - BODY
     var body: some View {
         ZStack {
@@ -17,7 +27,7 @@ struct ContentView: View {
                 NavigationBarView()
                     .padding(.horizontal, 15)
                     .padding(.bottom)
-                    .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
+                    .padding(.top, getSafeAreaTop())
                 // Depricated -> Check this Part
                 // Norch checked
                     .background(.white)
@@ -25,6 +35,7 @@ struct ContentView: View {
                 Spacer()
                 FooterView()
                     .padding(.horizontal)
+                Spacer()
             }
             .background(colorBackground.ignoresSafeArea(.all, edges: .all))
         } //: ZSTACKg
