@@ -32,13 +32,28 @@ struct ContentView: View {
                 // Norch checked
                     .background(.white)
                     .shadow(color: Color.black.opacity(0.05), radius: 5, x: 0, y: 5)
-                Spacer()
-                FooterView()
-                    .padding(.horizontal)
-                Spacer()
+                ScrollView(.vertical, showsIndicators: false) {
+                    VStack(alignment: .center, spacing: 0) {
+                        FeaturedTabView()
+                            .frame(height: UIScreen.main.bounds.width / 1.475)
+                            .padding(.vertical, 20)
+                        FooterView()
+                            .padding(.horizontal)
+                            
+                    }
+                }
+
+//                ScrollView(.vertical, showsIndicators: false, content: {
+//                    VStack(spacing: 0) {
+//                        FeaturedTabView()
+//                            .padding(.vertical, 20)
+//                        FooterView()
+//                            .padding(.horizontal)
+//                    }
+//                })
             }
             .background(colorBackground.ignoresSafeArea(.all, edges: .all))
-        } //: ZSTACKg
+        } //: ZSTACK
         .ignoresSafeArea(.all, edges: .top)
     }
 }
