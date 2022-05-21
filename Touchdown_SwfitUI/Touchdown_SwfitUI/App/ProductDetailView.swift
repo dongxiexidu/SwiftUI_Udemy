@@ -21,12 +21,37 @@ struct ProductDetailView: View {
             // DETAIL TOP PART
             TopPartDetailView()
                 .padding(.horizontal)
-            // RATINGS + SIZES
+                .zIndex(1)
+            // DETAIL BOTTOM PART
+            
+            VStack(alignment: .center, spacing: 0) {
+                // RATINGS + SIZES
+                RatingsSizeDetailView()
+                    .padding(.top, -20)
+                    .padding(.bottom, 10)
+                
+                ScrollView(.vertical, showsIndicators: false) {
+                    Text(sampleProduct.description)
+                        .font(.system(.body, design: .rounded))
+                        .foregroundColor(.gray)
+                        .multilineTextAlignment(.leading)
+                } //: SCROLL
+                QuantityFavoriteDetailView()
+                    .padding(.vertical, 10)
+                AddToCartDetailView()
+                    .padding(.bottom, 20)
+            } //: VSTACK
+            .padding(.horizontal)
+            .background(Color.white.clipShape(CustomShape())
+                .padding(.top, -105)
+            )
+            
             // DESCRIPTION
             // QUANTITY + FAVORITE
+            
             // ADD TO CART
-            Spacer()
         } //:VSTACK
+        .zIndex(0)
         .ignoresSafeArea(.all, edges: .all)
         .background(
             Color(red: sampleProduct.red, green: sampleProduct.green, blue: sampleProduct.blue).ignoresSafeArea(.all, edges: .all)
