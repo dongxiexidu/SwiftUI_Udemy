@@ -48,7 +48,9 @@
 		4AC72735283540180037CB1D /* InsetMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC72734283540180037CB1D /* InsetMapView.swift */; };
 		4AC72737283542730037CB1D /* ExternalWeblinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC72736283542730037CB1D /* ExternalWeblinkView.swift */; };
 		4AEACED128385D7E00DE24CF /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AEACED028385D7E00DE24CF /* Stickers.xcassets */; };
-		4AEACED528385D7E00DE24CF /* Stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4AEACECE28385D7D00DE24CF /* Stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4AEACED528385D7E00DE24CF /* Stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4AEACECE28385D7D00DE24CF /* Stickers.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4AEACEDB28385F0100DE24CF /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEACEDA28385F0100DE24CF /* CreditsView.swift */; };
+		4AEACEDE2838603F00DE24CF /* CenterModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEACEDD2838603F00DE24CF /* CenterModifier.swift */; };
 		4AECCA36283785D000DAF3CA /* GridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AECCA35283785D000DAF3CA /* GridItemView.swift */; };
 /* End PBXBuildFile section */
 
@@ -122,6 +124,9 @@
 		4AEACECE28385D7D00DE24CF /* Stickers.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Stickers.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AEACED028385D7E00DE24CF /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
 		4AEACED228385D7E00DE24CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AEACEDA28385F0100DE24CF /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
+		4AEACEDD2838603F00DE24CF /* CenterModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterModifier.swift; sourceTree = "<group>"; };
+		4AEACEDF2838610400DE24CF /* Africa_SwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Africa_SwiftUI.entitlements; sourceTree = "<group>"; };
 		4AECCA35283785D000DAF3CA /* GridItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -184,6 +189,8 @@
 		4A41185F282F9590006A83A4 /* Africa_SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				4AEACEDF2838610400DE24CF /* Africa_SwiftUI.entitlements */,
+				4AEACEDC2838603000DE24CF /* Modifier */,
 				4A17F4E02835B79300AD8EA1 /* Helper */,
 				4A3B6155283378DE00D99C0F /* Extension */,
 				4A3B6152283377BD00D99C0F /* Model */,
@@ -263,6 +270,7 @@
 				4A61772D28370AA700AFB4B0 /* MapAnnotationView.swift */,
 				4A61772F28370E0600AFB4B0 /* MotionAnimationView.swift */,
 				4AECCA35283785D000DAF3CA /* GridItemView.swift */,
+				4AEACEDA28385F0100DE24CF /* CreditsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -274,6 +282,14 @@
 				4AEACED228385D7E00DE24CF /* Info.plist */,
 			);
 			path = Stickers;
+			sourceTree = "<group>";
+		};
+		4AEACEDC2838603000DE24CF /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				4AEACEDD2838603F00DE24CF /* CenterModifier.swift */,
+			);
+			path = Modifier;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -410,8 +426,10 @@
 				4A17F4E22835B7A900AD8EA1 /* VideePlayerHelper.swift in Sources */,
 				4AECCA36283785D000DAF3CA /* GridItemView.swift in Sources */,
 				4A17F4DD2835A8BE00AD8EA1 /* VideoListItem.swift in Sources */,
+				4AEACEDB28385F0100DE24CF /* CreditsView.swift in Sources */,
 				4A3B6157283378EE00D99C0F /* CodableBundleExtension.swift in Sources */,
 				4A61773028370E0600AFB4B0 /* MotionAnimationView.swift in Sources */,
+				4AEACEDE2838603F00DE24CF /* CenterModifier.swift in Sources */,
 				4AC7272F283538DC0037CB1D /* HeadingView.swift in Sources */,
 				4A17F4DF2835B6CC00AD8EA1 /* VideoPlayerView.swift in Sources */,
 			);
@@ -422,6 +440,7 @@
 /* Begin PBXTargetDependency section */
 		4AEACED428385D7E00DE24CF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = 4AEACECD28385D7D00DE24CF /* Stickers */;
 			targetProxy = 4AEACED328385D7E00DE24CF /* PBXContainerItemProxy */;
 		};
@@ -547,6 +566,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Africa_SwiftUI/Africa_SwiftUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Africa_SwiftUI/Preview Content\"";
@@ -566,6 +586,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "JP.Africa-SwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -577,6 +598,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Africa_SwiftUI/Africa_SwiftUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Africa_SwiftUI/Preview Content\"";
@@ -596,6 +618,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "JP.Africa-SwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -617,6 +640,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "JP.Africa-SwiftUI.Stickers";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -637,6 +661,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "JP.Africa-SwiftUI.Stickers";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
