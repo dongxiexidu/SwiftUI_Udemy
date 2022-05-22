@@ -7,22 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4AD8A9EA283A3221003C7622 /* Devote_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD8A9E9283A3221003C7622 /* Devote_SwiftUIApp.swift */; };
-		4AD8A9EC283A3221003C7622 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD8A9EB283A3221003C7622 /* ContentView.swift */; };
-		4AD8A9EE283A3222003C7622 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AD8A9ED283A3222003C7622 /* Assets.xcassets */; };
-		4AD8A9F1283A3222003C7622 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AD8A9F0283A3222003C7622 /* Preview Assets.xcassets */; };
+		4AD8AA04283A32CC003C7622 /* Devote_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD8AA03283A32CC003C7622 /* Devote_SwiftUIApp.swift */; };
+		4AD8AA06283A32CC003C7622 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD8AA05283A32CC003C7622 /* ContentView.swift */; };
+		4AD8AA08283A32CD003C7622 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AD8AA07283A32CD003C7622 /* Assets.xcassets */; };
+		4AD8AA0B283A32CD003C7622 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AD8AA0A283A32CD003C7622 /* Preview Assets.xcassets */; };
+		4AD8AA0D283A32CD003C7622 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD8AA0C283A32CD003C7622 /* Persistence.swift */; };
+		4AD8AA10283A32CD003C7622 /* Devote_SwiftUI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4AD8AA0E283A32CD003C7622 /* Devote_SwiftUI.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4AD8A9E6283A3221003C7622 /* Devote_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Devote_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4AD8A9E9283A3221003C7622 /* Devote_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Devote_SwiftUIApp.swift; sourceTree = "<group>"; };
-		4AD8A9EB283A3221003C7622 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		4AD8A9ED283A3222003C7622 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4AD8A9F0283A3222003C7622 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4AD8AA00283A32CC003C7622 /* Devote_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Devote_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AD8AA03283A32CC003C7622 /* Devote_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Devote_SwiftUIApp.swift; sourceTree = "<group>"; };
+		4AD8AA05283A32CC003C7622 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4AD8AA07283A32CD003C7622 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4AD8AA0A283A32CD003C7622 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4AD8AA0C283A32CD003C7622 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		4AD8AA0F283A32CD003C7622 /* Devote_SwiftUI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Devote_SwiftUI.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4AD8A9E3283A3221003C7622 /* Frameworks */ = {
+		4AD8A9FD283A32CC003C7622 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -32,37 +36,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4AD8A9DD283A3221003C7622 = {
+		4AD8A9F7283A32CC003C7622 = {
 			isa = PBXGroup;
 			children = (
-				4AD8A9E8283A3221003C7622 /* Devote_SwiftUI */,
-				4AD8A9E7283A3221003C7622 /* Products */,
+				4AD8AA02283A32CC003C7622 /* Devote_SwiftUI */,
+				4AD8AA01283A32CC003C7622 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		4AD8A9E7283A3221003C7622 /* Products */ = {
+		4AD8AA01283A32CC003C7622 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4AD8A9E6283A3221003C7622 /* Devote_SwiftUI.app */,
+				4AD8AA00283A32CC003C7622 /* Devote_SwiftUI.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4AD8A9E8283A3221003C7622 /* Devote_SwiftUI */ = {
+		4AD8AA02283A32CC003C7622 /* Devote_SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				4AD8A9E9283A3221003C7622 /* Devote_SwiftUIApp.swift */,
-				4AD8A9EB283A3221003C7622 /* ContentView.swift */,
-				4AD8A9ED283A3222003C7622 /* Assets.xcassets */,
-				4AD8A9EF283A3222003C7622 /* Preview Content */,
+				4AD8AA03283A32CC003C7622 /* Devote_SwiftUIApp.swift */,
+				4AD8AA05283A32CC003C7622 /* ContentView.swift */,
+				4AD8AA07283A32CD003C7622 /* Assets.xcassets */,
+				4AD8AA0C283A32CD003C7622 /* Persistence.swift */,
+				4AD8AA0E283A32CD003C7622 /* Devote_SwiftUI.xcdatamodeld */,
+				4AD8AA09283A32CD003C7622 /* Preview Content */,
 			);
 			path = Devote_SwiftUI;
 			sourceTree = "<group>";
 		};
-		4AD8A9EF283A3222003C7622 /* Preview Content */ = {
+		4AD8AA09283A32CD003C7622 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				4AD8A9F0283A3222003C7622 /* Preview Assets.xcassets */,
+				4AD8AA0A283A32CD003C7622 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -70,13 +76,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4AD8A9E5283A3221003C7622 /* Devote_SwiftUI */ = {
+		4AD8A9FF283A32CC003C7622 /* Devote_SwiftUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4AD8A9F4283A3222003C7622 /* Build configuration list for PBXNativeTarget "Devote_SwiftUI" */;
+			buildConfigurationList = 4AD8AA13283A32CD003C7622 /* Build configuration list for PBXNativeTarget "Devote_SwiftUI" */;
 			buildPhases = (
-				4AD8A9E2283A3221003C7622 /* Sources */,
-				4AD8A9E3283A3221003C7622 /* Frameworks */,
-				4AD8A9E4283A3221003C7622 /* Resources */,
+				4AD8A9FC283A32CC003C7622 /* Sources */,
+				4AD8A9FD283A32CC003C7622 /* Frameworks */,
+				4AD8A9FE283A32CC003C7622 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -84,25 +90,25 @@
 			);
 			name = Devote_SwiftUI;
 			productName = Devote_SwiftUI;
-			productReference = 4AD8A9E6283A3221003C7622 /* Devote_SwiftUI.app */;
+			productReference = 4AD8AA00283A32CC003C7622 /* Devote_SwiftUI.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		4AD8A9DE283A3221003C7622 /* Project object */ = {
+		4AD8A9F8283A32CC003C7622 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
-					4AD8A9E5283A3221003C7622 = {
+					4AD8A9FF283A32CC003C7622 = {
 						CreatedOnToolsVersion = 13.4;
 					};
 				};
 			};
-			buildConfigurationList = 4AD8A9E1283A3221003C7622 /* Build configuration list for PBXProject "Devote_SwiftUI" */;
+			buildConfigurationList = 4AD8A9FB283A32CC003C7622 /* Build configuration list for PBXProject "Devote_SwiftUI" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,42 +116,44 @@
 				en,
 				Base,
 			);
-			mainGroup = 4AD8A9DD283A3221003C7622;
-			productRefGroup = 4AD8A9E7283A3221003C7622 /* Products */;
+			mainGroup = 4AD8A9F7283A32CC003C7622;
+			productRefGroup = 4AD8AA01283A32CC003C7622 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4AD8A9E5283A3221003C7622 /* Devote_SwiftUI */,
+				4AD8A9FF283A32CC003C7622 /* Devote_SwiftUI */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4AD8A9E4283A3221003C7622 /* Resources */ = {
+		4AD8A9FE283A32CC003C7622 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AD8A9F1283A3222003C7622 /* Preview Assets.xcassets in Resources */,
-				4AD8A9EE283A3222003C7622 /* Assets.xcassets in Resources */,
+				4AD8AA0B283A32CD003C7622 /* Preview Assets.xcassets in Resources */,
+				4AD8AA08283A32CD003C7622 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4AD8A9E2283A3221003C7622 /* Sources */ = {
+		4AD8A9FC283A32CC003C7622 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AD8A9EC283A3221003C7622 /* ContentView.swift in Sources */,
-				4AD8A9EA283A3221003C7622 /* Devote_SwiftUIApp.swift in Sources */,
+				4AD8AA10283A32CD003C7622 /* Devote_SwiftUI.xcdatamodeld in Sources */,
+				4AD8AA0D283A32CD003C7622 /* Persistence.swift in Sources */,
+				4AD8AA06283A32CC003C7622 /* ContentView.swift in Sources */,
+				4AD8AA04283A32CC003C7622 /* Devote_SwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		4AD8A9F2283A3222003C7622 /* Debug */ = {
+		4AD8AA11283A32CD003C7622 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -205,7 +213,7 @@
 			};
 			name = Debug;
 		};
-		4AD8A9F3283A3222003C7622 /* Release */ = {
+		4AD8AA12283A32CD003C7622 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -259,7 +267,7 @@
 			};
 			name = Release;
 		};
-		4AD8A9F5283A3222003C7622 /* Debug */ = {
+		4AD8AA14283A32CD003C7622 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -288,7 +296,7 @@
 			};
 			name = Debug;
 		};
-		4AD8A9F6283A3222003C7622 /* Release */ = {
+		4AD8AA15283A32CD003C7622 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -320,25 +328,38 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4AD8A9E1283A3221003C7622 /* Build configuration list for PBXProject "Devote_SwiftUI" */ = {
+		4AD8A9FB283A32CC003C7622 /* Build configuration list for PBXProject "Devote_SwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4AD8A9F2283A3222003C7622 /* Debug */,
-				4AD8A9F3283A3222003C7622 /* Release */,
+				4AD8AA11283A32CD003C7622 /* Debug */,
+				4AD8AA12283A32CD003C7622 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4AD8A9F4283A3222003C7622 /* Build configuration list for PBXNativeTarget "Devote_SwiftUI" */ = {
+		4AD8AA13283A32CD003C7622 /* Build configuration list for PBXNativeTarget "Devote_SwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4AD8A9F5283A3222003C7622 /* Debug */,
-				4AD8A9F6283A3222003C7622 /* Release */,
+				4AD8AA14283A32CD003C7622 /* Debug */,
+				4AD8AA15283A32CD003C7622 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4AD8AA0E283A32CD003C7622 /* Devote_SwiftUI.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4AD8AA0F283A32CD003C7622 /* Devote_SwiftUI.xcdatamodel */,
+			);
+			currentVersion = 4AD8AA0F283A32CD003C7622 /* Devote_SwiftUI.xcdatamodel */;
+			path = Devote_SwiftUI.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
-	rootObject = 4AD8A9DE283A3221003C7622 /* Project object */;
+	rootObject = 4AD8A9F8283A32CC003C7622 /* Project object */;
 }
