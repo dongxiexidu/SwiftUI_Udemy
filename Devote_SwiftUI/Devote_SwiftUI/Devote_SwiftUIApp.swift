@@ -15,6 +15,7 @@ struct Devote_SwiftUIApp: App {
         WindowGroup {
             ContentView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            // managed Object Contect in the Enviornment
         }
     }
 }
