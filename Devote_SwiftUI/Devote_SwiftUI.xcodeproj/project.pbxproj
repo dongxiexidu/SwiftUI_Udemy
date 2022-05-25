@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A399988283DA87D006AE7E1 /* HideKeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A399987283DA87D006AE7E1 /* HideKeyboardExtension.swift */; };
 		4A8092B8283B047F0069691C /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8092B7283B047F0069691C /* Constant.swift */; };
 		4AD8AA04283A32CC003C7622 /* Devote_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD8AA03283A32CC003C7622 /* Devote_SwiftUIApp.swift */; };
 		4AD8AA06283A32CC003C7622 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD8AA05283A32CC003C7622 /* ContentView.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A399987283DA87D006AE7E1 /* HideKeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboardExtension.swift; sourceTree = "<group>"; };
 		4A8092B7283B047F0069691C /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		4AD8AA00283A32CC003C7622 /* Devote_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Devote_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AD8AA03283A32CC003C7622 /* Devote_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Devote_SwiftUIApp.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 		4AD8AA1E283A33A2003C7622 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				4A399987283DA87D006AE7E1 /* HideKeyboardExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 			files = (
 				4AD8AA10283A32CD003C7622 /* Devote_SwiftUI.xcdatamodeld in Sources */,
 				4AD8AA0D283A32CD003C7622 /* Persistence.swift in Sources */,
+				4A399988283DA87D006AE7E1 /* HideKeyboardExtension.swift in Sources */,
 				4A8092B8283B047F0069691C /* Constant.swift in Sources */,
 				4AD8AA06283A32CC003C7622 /* ContentView.swift in Sources */,
 				4AD8AA04283A32CC003C7622 /* Devote_SwiftUIApp.swift in Sources */,
