@@ -18,6 +18,7 @@
 		4ACC43282849E12000A91BD9 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACC43272849E12000A91BD9 /* Note.swift */; };
 		4ACC432A2849FBCB00A91BD9 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACC43292849FBCB00A91BD9 /* DetailView.swift */; };
 		4ACC432C2849FE6600A91BD9 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACC432B2849FE6600A91BD9 /* CreditsView.swift */; };
+		4ACC432F2849FF6B00A91BD9 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACC432E2849FF6B00A91BD9 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		4ACC43272849E12000A91BD9 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		4ACC43292849FBCB00A91BD9 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		4ACC432B2849FE6600A91BD9 /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
+		4ACC432E2849FF6B00A91BD9 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 		4ACC430B2849DF2A00A91BD9 /* Notes_SwiftUI WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				4ACC432D2849FF5D00A91BD9 /* Component */,
 				4ACC43262849E11100A91BD9 /* Model */,
 				4ACC43252849E10000A91BD9 /* View */,
 				4ACC430E2849DF2A00A91BD9 /* Notes_SwiftUIApp.swift */,
@@ -154,6 +157,14 @@
 				4ACC43272849E12000A91BD9 /* Note.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		4ACC432D2849FF5D00A91BD9 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				4ACC432E2849FF6B00A91BD9 /* HeaderView.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +300,7 @@
 				4ACC432C2849FE6600A91BD9 /* CreditsView.swift in Sources */,
 				4ACC432A2849FBCB00A91BD9 /* DetailView.swift in Sources */,
 				4ACC43282849E12000A91BD9 /* Note.swift in Sources */,
+				4ACC432F2849FF6B00A91BD9 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
