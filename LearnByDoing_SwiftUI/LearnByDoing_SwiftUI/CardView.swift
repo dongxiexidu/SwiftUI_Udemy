@@ -13,6 +13,10 @@ struct CardView: View {
     let card: Card
     
     @State private var fadeIn: Bool = false
+    @State private var moveDownward: Bool = false
+    @State private var moveUpward: Bool = false
+    
+    var hapticImpact = UIImpactFeedbackGenerator(style: .heavy)
     
     // MARK: - CARD
     var body: some View {
@@ -31,11 +35,13 @@ struct CardView: View {
                     .foregroundColor(.white)
                     .italic()
             }
-            .offset(y: -218)
+            .offset(y: moveDownward ? -218 : -300)
             
             Button(action: {
                 print("action tapped")
                 playSound(sound: "sound-chime", type: "mp3")
+                
+                hapticImpact.impactOccurred()
             }, label: {
                 HStack {
                     Text(card.callToAction.uppercased())
@@ -53,15 +59,20 @@ struct CardView: View {
                 .clipShape(Capsule())
                 .shadow(color: Color("ColorShadow"), radius: 6, x: 0, y: 3)
             })
-            .offset(y: 210)
+            .offset(y: moveUpward ? 210 : 300)
         }
         .frame(width: 335, height: 545)
         .background(LinearGradient(gradient: Gradient(colors: card.gradientColors), startPoint: .top, endPoint: .bottom))
+        // LinearGradient -> 색깔 그레디어트 값 주기. 
         .cornerRadius(16)
         .shadow(radius: 8)
         .onAppear {
             withAnimation(.linear(duration: 0.2)) {
                 fadeIn.toggle()
+            }
+            withAnimation(.linear(duration: 0.8)) {
+                moveUpward.toggle()
+                moveDownward.toggle()
             }
         }
     }
