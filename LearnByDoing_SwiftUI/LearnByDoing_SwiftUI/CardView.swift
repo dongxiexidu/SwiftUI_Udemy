@@ -12,10 +12,13 @@ struct CardView: View {
     
     let card: Card
     
+    @State private var fadeIn: Bool = false
+    
     // MARK: - CARD
     var body: some View {
         ZStack {
             Image(card.imageName)
+                .opacity(fadeIn ? 1.0 : 0.0)
             
             VStack {
                 Text(card.title)
@@ -32,6 +35,7 @@ struct CardView: View {
             
             Button(action: {
                 print("action tapped")
+                playSound(sound: "sound-chime", type: "mp3")
             }, label: {
                 HStack {
                     Text(card.callToAction.uppercased())
@@ -55,12 +59,17 @@ struct CardView: View {
         .background(LinearGradient(gradient: Gradient(colors: card.gradientColors), startPoint: .top, endPoint: .bottom))
         .cornerRadius(16)
         .shadow(radius: 8)
+        .onAppear {
+            withAnimation(.linear(duration: 0.2)) {
+                fadeIn.toggle()
+            }
+        }
     }
 }
 
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
-        CardView(card: cardData[1])
+        CardView(card: cardData[0])
             .previewLayout(.sizeThatFits)
     }
 }

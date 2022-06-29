@@ -77,7 +77,6 @@ struct SettingsView: View {
                         SettingsRowView(name: "Twitter", linkLabel: "@Robert Petras", linkDestination: "twitter.com/robertpetras")
                         SettingsRowView(name: "SwfitUI", content: "2.0")
                         SettingsRowView(name: "Version", content: "1.1.0")
-                        
                     }
                     
                 } //: VSTACK
