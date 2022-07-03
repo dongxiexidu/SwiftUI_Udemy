@@ -8,18 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		4AD4D954286D1BD1005091C0 /* Avocado_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD4D953286D1BD1005091C0 /* Avocado_SwiftUIApp.swift */; };
-		4AD4D956286D1BD1005091C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD4D955286D1BD1005091C0 /* ContentView.swift */; };
 		4AD4D958286D1BD2005091C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AD4D957286D1BD2005091C0 /* Assets.xcassets */; };
 		4AD4D95B286D1BD2005091C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AD4D95A286D1BD2005091C0 /* Preview Assets.xcassets */; };
+		4AEBBE7D287153A0008FFE9E /* AvocadosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEBBE7C287153A0008FFE9E /* AvocadosView.swift */; };
+		4AEBBE7F287153BC008FFE9E /* RipeningStagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEBBE7E287153BC008FFE9E /* RipeningStagesView.swift */; };
+		4AEBBE81287153C2008FFE9E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEBBE80287153C2008FFE9E /* SettingsView.swift */; };
+		4AEBBE83287153D1008FFE9E /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEBBE82287153D1008FFE9E /* AppView.swift */; };
+		4AEBBE8528715473008FFE9E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEBBE8428715473008FFE9E /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4AD4D950286D1BD1005091C0 /* Avocado_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Avocado_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AD4D953286D1BD1005091C0 /* Avocado_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avocado_SwiftUIApp.swift; sourceTree = "<group>"; };
-		4AD4D955286D1BD1005091C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4AD4D957286D1BD2005091C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4AD4D95A286D1BD2005091C0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4AEBBE782871514A008FFE9E /* Avocado-SwiftUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Avocado-SwiftUI-Info.plist"; sourceTree = SOURCE_ROOT; };
+		4AEBBE7C287153A0008FFE9E /* AvocadosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvocadosView.swift; sourceTree = "<group>"; };
+		4AEBBE7E287153BC008FFE9E /* RipeningStagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RipeningStagesView.swift; sourceTree = "<group>"; };
+		4AEBBE80287153C2008FFE9E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		4AEBBE82287153D1008FFE9E /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		4AEBBE8428715473008FFE9E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +60,9 @@
 		4AD4D952286D1BD1005091C0 /* Avocado_SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				4AEBBE7B28715383008FFE9E /* View */,
 				4AEBBE782871514A008FFE9E /* Avocado-SwiftUI-Info.plist */,
 				4AD4D953286D1BD1005091C0 /* Avocado_SwiftUIApp.swift */,
-				4AD4D955286D1BD1005091C0 /* ContentView.swift */,
 				4AD4D957286D1BD2005091C0 /* Assets.xcassets */,
 				4AD4D959286D1BD2005091C0 /* Preview Content */,
 			);
@@ -67,6 +75,18 @@
 				4AD4D95A286D1BD2005091C0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4AEBBE7B28715383008FFE9E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4AEBBE7C287153A0008FFE9E /* AvocadosView.swift */,
+				4AEBBE7E287153BC008FFE9E /* RipeningStagesView.swift */,
+				4AEBBE80287153C2008FFE9E /* SettingsView.swift */,
+				4AEBBE82287153D1008FFE9E /* AppView.swift */,
+				4AEBBE8428715473008FFE9E /* ContentView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +159,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AD4D956286D1BD1005091C0 /* ContentView.swift in Sources */,
+				4AEBBE81287153C2008FFE9E /* SettingsView.swift in Sources */,
+				4AEBBE83287153D1008FFE9E /* AppView.swift in Sources */,
+				4AEBBE8528715473008FFE9E /* ContentView.swift in Sources */,
+				4AEBBE7F287153BC008FFE9E /* RipeningStagesView.swift in Sources */,
 				4AD4D954286D1BD1005091C0 /* Avocado_SwiftUIApp.swift in Sources */,
+				4AEBBE7D287153A0008FFE9E /* AvocadosView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
