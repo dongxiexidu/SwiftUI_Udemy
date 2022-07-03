@@ -76,7 +76,6 @@ struct RecipeDetailView: View {
                 VStack {
                     Button(action: {
                         dismiss()
-                        
                     }, label: {
                         Image(systemName: "chevron.down.circle.fill")
                             .font(.title)
