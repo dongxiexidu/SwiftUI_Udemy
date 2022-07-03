@@ -20,6 +20,7 @@
 		4AEBBE8F28716268008FFE9E /* HeaderData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEBBE8E28716268008FFE9E /* HeaderData.swift */; };
 		4AEBBE91287162A6008FFE9E /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEBBE90287162A6008FFE9E /* RecipeModel.swift */; };
 		4AEBBE93287162CE008FFE9E /* RecipeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEBBE92287162CE008FFE9E /* RecipeData.swift */; };
+		4AEBBE95287164C1008FFE9E /* DishesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEBBE94287164C1008FFE9E /* DishesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		4AEBBE8E28716268008FFE9E /* HeaderData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderData.swift; sourceTree = "<group>"; };
 		4AEBBE90287162A6008FFE9E /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
 		4AEBBE92287162CE008FFE9E /* RecipeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeData.swift; sourceTree = "<group>"; };
+		4AEBBE94287164C1008FFE9E /* DishesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				4AEBBE82287153D1008FFE9E /* AppView.swift */,
 				4AEBBE8428715473008FFE9E /* ContentView.swift */,
 				4AEBBE86287157A3008FFE9E /* HeaderView.swift */,
+				4AEBBE94287164C1008FFE9E /* DishesView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 			files = (
 				4AEBBE81287153C2008FFE9E /* SettingsView.swift in Sources */,
 				4AEBBE83287153D1008FFE9E /* AppView.swift in Sources */,
+				4AEBBE95287164C1008FFE9E /* DishesView.swift in Sources */,
 				4AEBBE8528715473008FFE9E /* ContentView.swift in Sources */,
 				4AEBBE7F287153BC008FFE9E /* RipeningStagesView.swift in Sources */,
 				4AD4D954286D1BD1005091C0 /* Avocado_SwiftUIApp.swift in Sources */,
