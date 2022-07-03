@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-let recipeData: [Recipe] = [
+let recipesData: [Recipe] = [
     Recipe(
       title: "Avocado Crostini",
       headline: "Colourful twist on a classic.",
