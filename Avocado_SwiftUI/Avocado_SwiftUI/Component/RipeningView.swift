@@ -9,10 +9,12 @@ import SwiftUI
 
 struct RipeningView: View {
     // MARK: - PROPERTIES
+    
+    let ripening: Ripening
     @State private var slideInAnimation: Bool = false
     var body: some View {
         VStack {
-            Image("avocado-ripening-1")
+            Image(ripening.image)
                 .resizable()
                 .frame(width: 100, height: 100, alignment: .center)
                 .clipShape(Circle())
@@ -32,7 +34,7 @@ struct RipeningView: View {
             VStack(alignment: .center, spacing: 10) {
                 // STAGE
                 VStack(alignment: .center, spacing: 10) {
-                    Text("1")
+                    Text(ripening.stage)
                         .font(.system(.largeTitle, design: .serif))
                         .fontWeight(.bold)
                     Text("STAGE")
@@ -43,7 +45,7 @@ struct RipeningView: View {
                 .padding(.top, 65)
                 .frame(width: 180)
                 // TITLE
-                Text("HARD")
+                Text(ripening.title)
                     .font(.system(.title, design: .serif))
                     .fontWeight(.bold)
                     .foregroundColor(Color("ColorGreenMedium"))
@@ -58,13 +60,13 @@ struct RipeningView: View {
                     )
                 // DESCRIPTION
                 Spacer()
-                Text("DESCRIPTION")
+                Text(ripening.description)
                     .foregroundColor(Color("ColorGreenDark"))
                     .fontWeight(.bold)
                     .lineLimit(nil)
                 Spacer()
                 // RIPENESS
-                Text("5+ DAYS")
+                Text(ripening.ripeness.uppercased())
                     .foregroundColor(.white)
                     .font(.system(.callout, design: .serif))
                     .shadow(radius: 6)
@@ -76,7 +78,7 @@ struct RipeningView: View {
                             .shadow(color: Color("ColorBlackTransparentLight"), radius: 6, x: 0, y: 6)
                     )
                 // INSTRUCTION
-                Text("INSTRUCTION")
+                Text(ripening.instruction)
                     .font(.footnote)
                     .fontWeight(.bold)
                     .foregroundColor(Color("ColorGreenLight"))
@@ -100,6 +102,6 @@ struct RipeningView: View {
 
 struct RipeningView_Previews: PreviewProvider {
     static var previews: some View {
-        RipeningView()
+        RipeningView(ripening: ripeningData[3])
     }
 }
