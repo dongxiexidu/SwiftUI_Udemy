@@ -55,20 +55,6 @@ struct LongPressGestureBootCamp: View {
                     }
             }
         }
-        
-//        Text(isCompleted ? "Completed" : "Uncompleted")
-//            .padding()
-//            .padding(.horizontal)
-//            .background(isCompleted ? .green : .gray)
-//            .cornerRadius(10)
-//            .onTapGesture {
-//                isCompleted.toggle()
-//            }
-        // 탭 제스처: 곧바로 반응 -> 터치의 종류에 따라 반응하도록 설계하기!
-//            .onLongPressGesture(minimumDuration: 1.0, maximumDistance: 500) {
-//                isCompleted.toggle()
-//            }
-        // 탭하는 최소 시간, 탭을 한 뒤 이동해도 버튼이 감지
     }
 }
 

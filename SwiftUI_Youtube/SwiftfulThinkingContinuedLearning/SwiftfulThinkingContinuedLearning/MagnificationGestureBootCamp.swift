@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MagnificationGestureBootCamp: View {
-    @State var currentAmount: CGFloat = 0
+    @State private var currentAmount: CGFloat = 0
     @State private var lastAmount: CGFloat = 0
     var body: some View {
         VStack(spacing: 10) {
