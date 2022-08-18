@@ -15,6 +15,9 @@
 		D20BCEBB28AE37AF0069621B /* MultipleSheetsBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20BCEBA28AE37AF0069621B /* MultipleSheetsBootCamp.swift */; };
 		D20BCEBD28AE50A70069621B /* MultipleSheetsSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20BCEBC28AE50A70069621B /* MultipleSheetsSample.swift */; };
 		D20BCEBF28AE57990069621B /* MaskBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20BCEBE28AE57990069621B /* MaskBootCamp.swift */; };
+		D20BCEC128AE5EDC0069621B /* SoundEffectsBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20BCEC028AE5EDC0069621B /* SoundEffectsBootCamp.swift */; };
+		D20BCEC528AE61500069621B /* medieval.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D20BCEC328AE61500069621B /* medieval.mp3 */; };
+		D20BCEC628AE61500069621B /* rainfall.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D20BCEC428AE61500069621B /* rainfall.mp3 */; };
 		D23FE72F28AD273300A357D1 /* SwiftfulThinkingContinuedLearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23FE72E28AD273300A357D1 /* SwiftfulThinkingContinuedLearningApp.swift */; };
 		D23FE73328AD273400A357D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D23FE73228AD273400A357D1 /* Assets.xcassets */; };
 		D23FE73628AD273400A357D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D23FE73528AD273400A357D1 /* Preview Assets.xcassets */; };
@@ -31,6 +34,9 @@
 		D20BCEBA28AE37AF0069621B /* MultipleSheetsBootCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSheetsBootCamp.swift; sourceTree = "<group>"; };
 		D20BCEBC28AE50A70069621B /* MultipleSheetsSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSheetsSample.swift; sourceTree = "<group>"; };
 		D20BCEBE28AE57990069621B /* MaskBootCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskBootCamp.swift; sourceTree = "<group>"; };
+		D20BCEC028AE5EDC0069621B /* SoundEffectsBootCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundEffectsBootCamp.swift; sourceTree = "<group>"; };
+		D20BCEC328AE61500069621B /* medieval.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = medieval.mp3; sourceTree = "<group>"; };
+		D20BCEC428AE61500069621B /* rainfall.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rainfall.mp3; sourceTree = "<group>"; };
 		D23FE72B28AD273300A357D1 /* SwiftfulThinkingContinuedLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftfulThinkingContinuedLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D23FE72E28AD273300A357D1 /* SwiftfulThinkingContinuedLearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftfulThinkingContinuedLearningApp.swift; sourceTree = "<group>"; };
 		D23FE73228AD273400A357D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,6 +56,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D20BCEC228AE61430069621B /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				D20BCEC328AE61500069621B /* medieval.mp3 */,
+				D20BCEC428AE61500069621B /* rainfall.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		D23FE72228AD273300A357D1 = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +84,7 @@
 		D23FE72D28AD273300A357D1 /* SwiftfulThinkingContinuedLearning */ = {
 			isa = PBXGroup;
 			children = (
+				D20BCEC228AE61430069621B /* Sounds */,
 				D23FE72E28AD273300A357D1 /* SwiftfulThinkingContinuedLearningApp.swift */,
 				D20BCEBC28AE50A70069621B /* MultipleSheetsSample.swift */,
 				D23FE73C28AD275100A357D1 /* LongPressGestureBootCamp.swift */,
@@ -82,6 +98,7 @@
 				D20BCEB828AE32160069621B /* GeometryReaderBootCamp.swift */,
 				D20BCEBA28AE37AF0069621B /* MultipleSheetsBootCamp.swift */,
 				D20BCEBE28AE57990069621B /* MaskBootCamp.swift */,
+				D20BCEC028AE5EDC0069621B /* SoundEffectsBootCamp.swift */,
 			);
 			path = SwiftfulThinkingContinuedLearning;
 			sourceTree = "<group>";
@@ -152,8 +169,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D20BCEC528AE61500069621B /* medieval.mp3 in Resources */,
 				D23FE73628AD273400A357D1 /* Preview Assets.xcassets in Resources */,
 				D23FE73328AD273400A357D1 /* Assets.xcassets in Resources */,
+				D20BCEC628AE61500069621B /* rainfall.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +186,7 @@
 				D23FE72F28AD273300A357D1 /* SwiftfulThinkingContinuedLearningApp.swift in Sources */,
 				D20BCEBF28AE57990069621B /* MaskBootCamp.swift in Sources */,
 				D20BCEBD28AE50A70069621B /* MultipleSheetsSample.swift in Sources */,
+				D20BCEC128AE5EDC0069621B /* SoundEffectsBootCamp.swift in Sources */,
 				D20BCEB528AE1C790069621B /* DragGestureBootCamp2.swift in Sources */,
 				D20BCEB728AE2CB90069621B /* ScrollViewReaderBootCamp.swift in Sources */,
 				D20BCEB928AE32160069621B /* GeometryReaderBootCamp.swift in Sources */,
