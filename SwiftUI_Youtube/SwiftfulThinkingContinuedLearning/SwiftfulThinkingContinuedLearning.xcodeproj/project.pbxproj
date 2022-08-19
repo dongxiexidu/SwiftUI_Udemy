@@ -24,6 +24,8 @@
 		D20BCED028AF5C0F0069621B /* ArraysBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20BCECF28AF5C0F0069621B /* ArraysBootCamp.swift */; };
 		D20BCEF128AF7A220069621B /* CoreDataBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20BCEF028AF7A220069621B /* CoreDataBootCamp.swift */; };
 		D20BCEF428AF7B280069621B /* FruitsContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D20BCEF228AF7B280069621B /* FruitsContainer.xcdatamodeld */; };
+		D20BCEF628AF85630069621B /* CoreDataRelationshipsBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20BCEF528AF85630069621B /* CoreDataRelationshipsBootCamp.swift */; };
+		D20BCEF928AF86920069621B /* CoreDataContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D20BCEF728AF86920069621B /* CoreDataContainer.xcdatamodeld */; };
 		D23FE72F28AD273300A357D1 /* SwiftfulThinkingContinuedLearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23FE72E28AD273300A357D1 /* SwiftfulThinkingContinuedLearningApp.swift */; };
 		D23FE73328AD273400A357D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D23FE73228AD273400A357D1 /* Assets.xcassets */; };
 		D23FE73628AD273400A357D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D23FE73528AD273400A357D1 /* Preview Assets.xcassets */; };
@@ -49,6 +51,8 @@
 		D20BCECF28AF5C0F0069621B /* ArraysBootCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArraysBootCamp.swift; sourceTree = "<group>"; };
 		D20BCEF028AF7A220069621B /* CoreDataBootCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataBootCamp.swift; sourceTree = "<group>"; };
 		D20BCEF328AF7B280069621B /* FruitsContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FruitsContainer.xcdatamodel; sourceTree = "<group>"; };
+		D20BCEF528AF85630069621B /* CoreDataRelationshipsBootCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataRelationshipsBootCamp.swift; sourceTree = "<group>"; };
+		D20BCEF828AF86920069621B /* CoreDataContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataContainer.xcdatamodel; sourceTree = "<group>"; };
 		D23FE72B28AD273300A357D1 /* SwiftfulThinkingContinuedLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftfulThinkingContinuedLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D23FE72E28AD273300A357D1 /* SwiftfulThinkingContinuedLearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftfulThinkingContinuedLearningApp.swift; sourceTree = "<group>"; };
 		D23FE73228AD273400A357D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -117,6 +121,8 @@
 				D20BCECF28AF5C0F0069621B /* ArraysBootCamp.swift */,
 				D20BCEF028AF7A220069621B /* CoreDataBootCamp.swift */,
 				D20BCEF228AF7B280069621B /* FruitsContainer.xcdatamodeld */,
+				D20BCEF528AF85630069621B /* CoreDataRelationshipsBootCamp.swift */,
+				D20BCEF728AF86920069621B /* CoreDataContainer.xcdatamodeld */,
 			);
 			path = SwiftfulThinkingContinuedLearning;
 			sourceTree = "<group>";
@@ -209,6 +215,8 @@
 				D20BCEC128AE5EDC0069621B /* SoundEffectsBootCamp.swift in Sources */,
 				D20BCEB528AE1C790069621B /* DragGestureBootCamp2.swift in Sources */,
 				D20BCED028AF5C0F0069621B /* ArraysBootCamp.swift in Sources */,
+				D20BCEF928AF86920069621B /* CoreDataContainer.xcdatamodeld in Sources */,
+				D20BCEF628AF85630069621B /* CoreDataRelationshipsBootCamp.swift in Sources */,
 				D20BCECA28AE6A8D0069621B /* LocalNotificationBootCamp.swift in Sources */,
 				D20BCEB728AE2CB90069621B /* ScrollViewReaderBootCamp.swift in Sources */,
 				D20BCEB928AE32160069621B /* GeometryReaderBootCamp.swift in Sources */,
@@ -428,6 +436,16 @@
 			);
 			currentVersion = D20BCEF328AF7B280069621B /* FruitsContainer.xcdatamodel */;
 			path = FruitsContainer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		D20BCEF728AF86920069621B /* CoreDataContainer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D20BCEF828AF86920069621B /* CoreDataContainer.xcdatamodel */,
+			);
+			currentVersion = D20BCEF828AF86920069621B /* CoreDataContainer.xcdatamodel */;
+			path = CoreDataContainer.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
