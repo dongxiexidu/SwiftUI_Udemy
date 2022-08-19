@@ -27,6 +27,8 @@
 		D20BCEF628AF85630069621B /* CoreDataRelationshipsBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20BCEF528AF85630069621B /* CoreDataRelationshipsBootCamp.swift */; };
 		D20BCEF928AF86920069621B /* CoreDataContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D20BCEF728AF86920069621B /* CoreDataContainer.xcdatamodeld */; };
 		D20BCEFD28AFB7170069621B /* MultiThreadBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20BCEFC28AFB7170069621B /* MultiThreadBootCamp.swift */; };
+		D20BCF0128AFBCDE0069621B /* WeakSelfBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20BCF0028AFBCDE0069621B /* WeakSelfBootCamp.swift */; };
+		D20BCF0328AFC25C0069621B /* TypealiasBootComp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20BCF0228AFC25C0069621B /* TypealiasBootComp.swift */; };
 		D23FE72F28AD273300A357D1 /* SwiftfulThinkingContinuedLearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23FE72E28AD273300A357D1 /* SwiftfulThinkingContinuedLearningApp.swift */; };
 		D23FE73328AD273400A357D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D23FE73228AD273400A357D1 /* Assets.xcassets */; };
 		D23FE73628AD273400A357D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D23FE73528AD273400A357D1 /* Preview Assets.xcassets */; };
@@ -55,6 +57,8 @@
 		D20BCEF528AF85630069621B /* CoreDataRelationshipsBootCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataRelationshipsBootCamp.swift; sourceTree = "<group>"; };
 		D20BCEF828AF86920069621B /* CoreDataContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataContainer.xcdatamodel; sourceTree = "<group>"; };
 		D20BCEFC28AFB7170069621B /* MultiThreadBootCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiThreadBootCamp.swift; sourceTree = "<group>"; };
+		D20BCF0028AFBCDE0069621B /* WeakSelfBootCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakSelfBootCamp.swift; sourceTree = "<group>"; };
+		D20BCF0228AFC25C0069621B /* TypealiasBootComp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypealiasBootComp.swift; sourceTree = "<group>"; };
 		D23FE72B28AD273300A357D1 /* SwiftfulThinkingContinuedLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftfulThinkingContinuedLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D23FE72E28AD273300A357D1 /* SwiftfulThinkingContinuedLearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftfulThinkingContinuedLearningApp.swift; sourceTree = "<group>"; };
 		D23FE73228AD273400A357D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -126,6 +130,8 @@
 				D20BCEF528AF85630069621B /* CoreDataRelationshipsBootCamp.swift */,
 				D20BCEF728AF86920069621B /* CoreDataContainer.xcdatamodeld */,
 				D20BCEFC28AFB7170069621B /* MultiThreadBootCamp.swift */,
+				D20BCF0028AFBCDE0069621B /* WeakSelfBootCamp.swift */,
+				D20BCF0228AFC25C0069621B /* TypealiasBootComp.swift */,
 			);
 			path = SwiftfulThinkingContinuedLearning;
 			sourceTree = "<group>";
@@ -222,9 +228,11 @@
 				D20BCEF928AF86920069621B /* CoreDataContainer.xcdatamodeld in Sources */,
 				D20BCEF628AF85630069621B /* CoreDataRelationshipsBootCamp.swift in Sources */,
 				D20BCECA28AE6A8D0069621B /* LocalNotificationBootCamp.swift in Sources */,
+				D20BCF0128AFBCDE0069621B /* WeakSelfBootCamp.swift in Sources */,
 				D20BCEB728AE2CB90069621B /* ScrollViewReaderBootCamp.swift in Sources */,
 				D20BCEB928AE32160069621B /* GeometryReaderBootCamp.swift in Sources */,
 				D20BCEF128AF7A220069621B /* CoreDataBootCamp.swift in Sources */,
+				D20BCF0328AFC25C0069621B /* TypealiasBootComp.swift in Sources */,
 				D23FE73F28AD2C0E00A357D1 /* MagnificationGestureBootCamp.swift in Sources */,
 				D20BCEBB28AE37AF0069621B /* MultipleSheetsBootCamp.swift in Sources */,
 				D20BCEB128AE16B20069621B /* RotationGestureBootCamp.swift in Sources */,
