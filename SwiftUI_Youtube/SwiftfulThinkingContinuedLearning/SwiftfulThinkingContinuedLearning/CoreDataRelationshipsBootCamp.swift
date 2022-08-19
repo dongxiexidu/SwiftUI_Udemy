@@ -118,6 +118,21 @@ class CoreDataRelationshipViewModel: ObservableObject {
         save()
     }
     
+    func deleteBusiness(entity: BusinessEntity) {
+        manager.context.delete(entity)
+        save()
+    }
+    
+    func deleteDepartment(entity: DepartmentEntity) {
+        manager.context.delete(entity)
+        save()
+    }
+    
+    func deleteEmployee(entity: EmployeeEntity) {
+        manager.context.delete(entity)
+        save()
+    }
+    
     func getBusinesses() {
         let request = NSFetchRequest<BusinessEntity>(entityName: "BusinessEntity")
         do {
@@ -266,6 +281,9 @@ struct CoreDataRelationshipsBootCamp: View {
                         HStack(alignment: .top) {
                             ForEach(viewModel.businesses) { business in
                                 BusinesView(entity: business)
+                                    .onTapGesture {
+                                        viewModel.deleteBusiness(entity: business)
+                                    }
                             }
                         }
                     }
@@ -273,6 +291,9 @@ struct CoreDataRelationshipsBootCamp: View {
                         HStack(alignment: .top) {
                             ForEach(viewModel.departments) { department in
                                 DepartmentView(entity: department)
+                                    .onTapGesture {
+                                        viewModel.deleteDepartment(entity: department)
+                                    }
                             }
                         }
                     }
@@ -280,6 +301,9 @@ struct CoreDataRelationshipsBootCamp: View {
                         HStack(alignment: .top) {
                             ForEach(viewModel.employees) { employee in
                                 EmployeeView(entity: employee)
+                                    .onTapGesture {
+                                        viewModel.deleteEmployee(entity: employee)
+                                    }
                             }
                         }
                     }
