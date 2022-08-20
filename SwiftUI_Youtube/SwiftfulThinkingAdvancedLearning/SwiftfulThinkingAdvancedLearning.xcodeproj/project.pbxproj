@@ -12,6 +12,7 @@
 		D20BCF4428B113D60069621B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D20BCF4328B113D60069621B /* Preview Assets.xcassets */; };
 		D20BCF4B28B114270069621B /* ViewModifierBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20BCF4A28B114270069621B /* ViewModifierBootCamp.swift */; };
 		D20BCF4D28B11A610069621B /* ButtonStyleBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20BCF4C28B11A610069621B /* ButtonStyleBootCamp.swift */; };
+		D20BCF4F28B12B390069621B /* TransitionsBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20BCF4E28B12B390069621B /* TransitionsBootCamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		D20BCF4328B113D60069621B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D20BCF4A28B114270069621B /* ViewModifierBootCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifierBootCamp.swift; sourceTree = "<group>"; };
 		D20BCF4C28B11A610069621B /* ButtonStyleBootCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyleBootCamp.swift; sourceTree = "<group>"; };
+		D20BCF4E28B12B390069621B /* TransitionsBootCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionsBootCamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				D20BCF3C28B113D50069621B /* SwiftfulThinkingAdvancedLearningApp.swift */,
 				D20BCF4A28B114270069621B /* ViewModifierBootCamp.swift */,
 				D20BCF4C28B11A610069621B /* ButtonStyleBootCamp.swift */,
+				D20BCF4E28B12B390069621B /* TransitionsBootCamp.swift */,
 				D20BCF4028B113D60069621B /* Assets.xcassets */,
 				D20BCF4228B113D60069621B /* Preview Content */,
 			);
@@ -143,6 +146,7 @@
 				D20BCF4B28B114270069621B /* ViewModifierBootCamp.swift in Sources */,
 				D20BCF4D28B11A610069621B /* ButtonStyleBootCamp.swift in Sources */,
 				D20BCF3D28B113D50069621B /* SwiftfulThinkingAdvancedLearningApp.swift in Sources */,
+				D20BCF4F28B12B390069621B /* TransitionsBootCamp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
