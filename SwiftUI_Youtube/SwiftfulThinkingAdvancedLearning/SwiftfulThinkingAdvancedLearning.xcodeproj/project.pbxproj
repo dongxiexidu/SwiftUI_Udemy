@@ -14,6 +14,7 @@
 		D20BCF4D28B11A610069621B /* ButtonStyleBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20BCF4C28B11A610069621B /* ButtonStyleBootCamp.swift */; };
 		D20BCF4F28B12B390069621B /* TransitionsBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20BCF4E28B12B390069621B /* TransitionsBootCamp.swift */; };
 		D20BCF5128B131770069621B /* MatchedGeometryEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20BCF5028B131770069621B /* MatchedGeometryEffect.swift */; };
+		D20BCF5328B138320069621B /* CustomShapesBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20BCF5228B138320069621B /* CustomShapesBootCamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		D20BCF4C28B11A610069621B /* ButtonStyleBootCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyleBootCamp.swift; sourceTree = "<group>"; };
 		D20BCF4E28B12B390069621B /* TransitionsBootCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionsBootCamp.swift; sourceTree = "<group>"; };
 		D20BCF5028B131770069621B /* MatchedGeometryEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedGeometryEffect.swift; sourceTree = "<group>"; };
+		D20BCF5228B138320069621B /* CustomShapesBootCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShapesBootCamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				D20BCF4C28B11A610069621B /* ButtonStyleBootCamp.swift */,
 				D20BCF4E28B12B390069621B /* TransitionsBootCamp.swift */,
 				D20BCF5028B131770069621B /* MatchedGeometryEffect.swift */,
+				D20BCF5228B138320069621B /* CustomShapesBootCamp.swift */,
 				D20BCF4028B113D60069621B /* Assets.xcassets */,
 				D20BCF4228B113D60069621B /* Preview Content */,
 			);
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D20BCF4B28B114270069621B /* ViewModifierBootCamp.swift in Sources */,
+				D20BCF5328B138320069621B /* CustomShapesBootCamp.swift in Sources */,
 				D20BCF4D28B11A610069621B /* ButtonStyleBootCamp.swift in Sources */,
 				D20BCF3D28B113D50069621B /* SwiftfulThinkingAdvancedLearningApp.swift in Sources */,
 				D20BCF4F28B12B390069621B /* TransitionsBootCamp.swift in Sources */,
