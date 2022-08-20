@@ -67,7 +67,6 @@ class LocalFileManager {
         } catch {
             print(error.localizedDescription)
             return "ERROR SAVING IMAGE"
-
         }
     }
     
