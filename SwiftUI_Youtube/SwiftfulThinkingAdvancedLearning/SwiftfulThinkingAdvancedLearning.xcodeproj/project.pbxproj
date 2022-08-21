@@ -18,6 +18,7 @@
 		D24A964228B1C3CE00C10A3C /* CustomCurversBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24A964128B1C3CE00C10A3C /* CustomCurversBootCamp.swift */; };
 		D24A964628B1CB7500C10A3C /* CustomShapeAnimationBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24A964528B1CB7500C10A3C /* CustomShapeAnimationBootCamp.swift */; };
 		D24A964828B1D2C400C10A3C /* GenericsBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24A964728B1D2C400C10A3C /* GenericsBootCamp.swift */; };
+		D24A964A28B1D87900C10A3C /* ViewBuilderBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24A964928B1D87900C10A3C /* ViewBuilderBootCamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		D24A964128B1C3CE00C10A3C /* CustomCurversBootCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCurversBootCamp.swift; sourceTree = "<group>"; };
 		D24A964528B1CB7500C10A3C /* CustomShapeAnimationBootCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShapeAnimationBootCamp.swift; sourceTree = "<group>"; };
 		D24A964728B1D2C400C10A3C /* GenericsBootCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericsBootCamp.swift; sourceTree = "<group>"; };
+		D24A964928B1D87900C10A3C /* ViewBuilderBootCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBuilderBootCamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				D24A964128B1C3CE00C10A3C /* CustomCurversBootCamp.swift */,
 				D24A964528B1CB7500C10A3C /* CustomShapeAnimationBootCamp.swift */,
 				D24A964728B1D2C400C10A3C /* GenericsBootCamp.swift */,
+				D24A964928B1D87900C10A3C /* ViewBuilderBootCamp.swift */,
 				D20BCF4028B113D60069621B /* Assets.xcassets */,
 				D20BCF4228B113D60069621B /* Preview Content */,
 			);
@@ -165,6 +168,7 @@
 				D20BCF3D28B113D50069621B /* SwiftfulThinkingAdvancedLearningApp.swift in Sources */,
 				D24A964828B1D2C400C10A3C /* GenericsBootCamp.swift in Sources */,
 				D20BCF4F28B12B390069621B /* TransitionsBootCamp.swift in Sources */,
+				D24A964A28B1D87900C10A3C /* ViewBuilderBootCamp.swift in Sources */,
 				D24A964628B1CB7500C10A3C /* CustomShapeAnimationBootCamp.swift in Sources */,
 				D20BCF5128B131770069621B /* MatchedGeometryEffect.swift in Sources */,
 			);
