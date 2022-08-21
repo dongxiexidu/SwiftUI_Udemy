@@ -16,6 +16,7 @@
 		D20BCF5128B131770069621B /* MatchedGeometryEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20BCF5028B131770069621B /* MatchedGeometryEffect.swift */; };
 		D20BCF5328B138320069621B /* CustomShapesBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20BCF5228B138320069621B /* CustomShapesBootCamp.swift */; };
 		D24A964228B1C3CE00C10A3C /* CustomCurversBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24A964128B1C3CE00C10A3C /* CustomCurversBootCamp.swift */; };
+		D24A964628B1CB7500C10A3C /* CustomShapeAnimationBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24A964528B1CB7500C10A3C /* CustomShapeAnimationBootCamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		D20BCF5028B131770069621B /* MatchedGeometryEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedGeometryEffect.swift; sourceTree = "<group>"; };
 		D20BCF5228B138320069621B /* CustomShapesBootCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShapesBootCamp.swift; sourceTree = "<group>"; };
 		D24A964128B1C3CE00C10A3C /* CustomCurversBootCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCurversBootCamp.swift; sourceTree = "<group>"; };
+		D24A964528B1CB7500C10A3C /* CustomShapeAnimationBootCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShapeAnimationBootCamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				D20BCF5028B131770069621B /* MatchedGeometryEffect.swift */,
 				D20BCF5228B138320069621B /* CustomShapesBootCamp.swift */,
 				D24A964128B1C3CE00C10A3C /* CustomCurversBootCamp.swift */,
+				D24A964528B1CB7500C10A3C /* CustomShapeAnimationBootCamp.swift */,
 				D20BCF4028B113D60069621B /* Assets.xcassets */,
 				D20BCF4228B113D60069621B /* Preview Content */,
 			);
@@ -158,6 +161,7 @@
 				D20BCF4D28B11A610069621B /* ButtonStyleBootCamp.swift in Sources */,
 				D20BCF3D28B113D50069621B /* SwiftfulThinkingAdvancedLearningApp.swift in Sources */,
 				D20BCF4F28B12B390069621B /* TransitionsBootCamp.swift in Sources */,
+				D24A964628B1CB7500C10A3C /* CustomShapeAnimationBootCamp.swift in Sources */,
 				D20BCF5128B131770069621B /* MatchedGeometryEffect.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
