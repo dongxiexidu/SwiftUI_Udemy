@@ -13,7 +13,6 @@ import SwiftUI
 // MatchedGeometryEffect
 
 struct AppTabBarView: View {
-    @State private var selection: String = "HOME"
     @State private var tabSelection: TabBarItem = .home
     var body: some View {
         CustomTabBarContainerView(selection: $tabSelection) {
@@ -31,7 +30,7 @@ struct AppTabBarView: View {
 
 extension AppTabBarView {
     private var defaultTabView: some View {
-        TabView(selection: $selection) {
+        TabView(selection: $tabSelection) {
             Color.red
                 .tabItem {
                     Image(systemName: "house")
