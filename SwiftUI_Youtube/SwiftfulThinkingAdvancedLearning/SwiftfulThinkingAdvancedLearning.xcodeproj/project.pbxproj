@@ -22,6 +22,11 @@
 		D24A964C28B1E1A900C10A3C /* PreferenceKeyBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24A964B28B1E1A900C10A3C /* PreferenceKeyBootCamp.swift */; };
 		D24A964F28B1EEAE00C10A3C /* GeometryPreferenceBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24A964E28B1EEAE00C10A3C /* GeometryPreferenceBootCamp.swift */; };
 		D24A965128B1F2F600C10A3C /* ScrollViewOffsetPreferenceBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24A965028B1F2F600C10A3C /* ScrollViewOffsetPreferenceBootCamp.swift */; };
+		D2FE83EC28B2593A00B20A03 /* AppTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FE83EB28B2593A00B20A03 /* AppTabBarView.swift */; };
+		D2FE83EE28B25A0800B20A03 /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FE83ED28B25A0800B20A03 /* CustomTabBarView.swift */; };
+		D2FE83F028B25C3100B20A03 /* CustomTabBarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FE83EF28B25C3100B20A03 /* CustomTabBarContainerView.swift */; };
+		D2FE83F228B25F3A00B20A03 /* TabBarItemPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FE83F128B25F3A00B20A03 /* TabBarItemPreferenceKey.swift */; };
+		D2FE83F428B2612700B20A03 /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FE83F328B2612700B20A03 /* TabBarItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +46,11 @@
 		D24A964B28B1E1A900C10A3C /* PreferenceKeyBootCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceKeyBootCamp.swift; sourceTree = "<group>"; };
 		D24A964E28B1EEAE00C10A3C /* GeometryPreferenceBootCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryPreferenceBootCamp.swift; sourceTree = "<group>"; };
 		D24A965028B1F2F600C10A3C /* ScrollViewOffsetPreferenceBootCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewOffsetPreferenceBootCamp.swift; sourceTree = "<group>"; };
+		D2FE83EB28B2593A00B20A03 /* AppTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarView.swift; sourceTree = "<group>"; };
+		D2FE83ED28B25A0800B20A03 /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
+		D2FE83EF28B25C3100B20A03 /* CustomTabBarContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarContainerView.swift; sourceTree = "<group>"; };
+		D2FE83F128B25F3A00B20A03 /* TabBarItemPreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemPreferenceKey.swift; sourceTree = "<group>"; };
+		D2FE83F328B2612700B20A03 /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +93,7 @@
 				D24A964528B1CB7500C10A3C /* CustomShapeAnimationBootCamp.swift */,
 				D24A964728B1D2C400C10A3C /* GenericsBootCamp.swift */,
 				D24A964928B1D87900C10A3C /* ViewBuilderBootCamp.swift */,
+				D2FE83EA28B2592700B20A03 /* CustomTabBar */,
 				D24A964D28B1EE9D00C10A3C /* PreferenceKeyBootCamp */,
 				D20BCF4028B113D60069621B /* Assets.xcassets */,
 				D20BCF4228B113D60069621B /* Preview Content */,
@@ -106,6 +117,18 @@
 				D24A965028B1F2F600C10A3C /* ScrollViewOffsetPreferenceBootCamp.swift */,
 			);
 			path = PreferenceKeyBootCamp;
+			sourceTree = "<group>";
+		};
+		D2FE83EA28B2592700B20A03 /* CustomTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				D2FE83EB28B2593A00B20A03 /* AppTabBarView.swift */,
+				D2FE83ED28B25A0800B20A03 /* CustomTabBarView.swift */,
+				D2FE83EF28B25C3100B20A03 /* CustomTabBarContainerView.swift */,
+				D2FE83F128B25F3A00B20A03 /* TabBarItemPreferenceKey.swift */,
+				D2FE83F328B2612700B20A03 /* TabBarItem.swift */,
+			);
+			path = CustomTabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,19 +201,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2FE83EC28B2593A00B20A03 /* AppTabBarView.swift in Sources */,
 				D24A964C28B1E1A900C10A3C /* PreferenceKeyBootCamp.swift in Sources */,
 				D20BCF4B28B114270069621B /* ViewModifierBootCamp.swift in Sources */,
 				D20BCF5328B138320069621B /* CustomShapesBootCamp.swift in Sources */,
 				D24A964228B1C3CE00C10A3C /* CustomCurversBootCamp.swift in Sources */,
+				D2FE83F228B25F3A00B20A03 /* TabBarItemPreferenceKey.swift in Sources */,
 				D20BCF4D28B11A610069621B /* ButtonStyleBootCamp.swift in Sources */,
+				D2FE83EE28B25A0800B20A03 /* CustomTabBarView.swift in Sources */,
 				D20BCF3D28B113D50069621B /* SwiftfulThinkingAdvancedLearningApp.swift in Sources */,
 				D24A965128B1F2F600C10A3C /* ScrollViewOffsetPreferenceBootCamp.swift in Sources */,
 				D24A964F28B1EEAE00C10A3C /* GeometryPreferenceBootCamp.swift in Sources */,
 				D24A964828B1D2C400C10A3C /* GenericsBootCamp.swift in Sources */,
+				D2FE83F428B2612700B20A03 /* TabBarItem.swift in Sources */,
 				D20BCF4F28B12B390069621B /* TransitionsBootCamp.swift in Sources */,
 				D24A964A28B1D87900C10A3C /* ViewBuilderBootCamp.swift in Sources */,
 				D24A964628B1CB7500C10A3C /* CustomShapeAnimationBootCamp.swift in Sources */,
 				D20BCF5128B131770069621B /* MatchedGeometryEffect.swift in Sources */,
+				D2FE83F028B25C3100B20A03 /* CustomTabBarContainerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
