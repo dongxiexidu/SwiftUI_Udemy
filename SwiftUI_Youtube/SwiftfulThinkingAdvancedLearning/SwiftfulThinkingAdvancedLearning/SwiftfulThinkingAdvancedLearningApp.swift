@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftfulThinkingAdvancedLearningApp: App {
     var body: some Scene {
         WindowGroup {
-            UIViewRepresentableBootCamp()
+            ProtocolsBootCamp(colorTheme: DefaultColorTheme(), datasource: DefaultDataSource())
         }
     }
 }

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct UIViewControllerRepresentableBootCamp: View {
     @State private var showScreen: Bool = false
+    @State private var showScreen2: Bool = false
     @State private var image: UIImage? = nil
     var body: some View {
         VStack(spacing: 20) {
@@ -25,15 +26,25 @@ struct UIViewControllerRepresentableBootCamp: View {
             }
             
             Button {
+                showScreen2.toggle()
+            } label: {
+                Text("CLICK HERE: View")
+                    .withDefaultButtonFormmating(Color.blue)
+                    .padding(.horizontal, 40)
+            }
+            .withPressableStyle(0.8)
+            .sheet(isPresented: $showScreen2) {
+                BasicUIViewControllerRepresentable(labelText: "HELLO WORLD!")
+            }
+            Button {
                 showScreen.toggle()
             } label: {
-                Text("CLICK HERE")
+                Text("CLICK HERE: Image Picker")
                     .withDefaultButtonFormmating(Color.blue)
                     .padding(.horizontal, 40)
             }
             .withPressableStyle(0.8)
             .sheet(isPresented: $showScreen) {
-//                BasicUIViewControllerRepresentable(labelText: "HELLO WORLD!")
                 UIImagePickerControllerRepresentable(image: $image, showScreen: $showScreen)
             }
         }
