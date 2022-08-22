@@ -23,6 +23,7 @@
 		D24A964F28B1EEAE00C10A3C /* GeometryPreferenceBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24A964E28B1EEAE00C10A3C /* GeometryPreferenceBootCamp.swift */; };
 		D24A965128B1F2F600C10A3C /* ScrollViewOffsetPreferenceBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24A965028B1F2F600C10A3C /* ScrollViewOffsetPreferenceBootCamp.swift */; };
 		D276ABA828B35015006912D9 /* UIViewRepresentableBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D276ABA728B35015006912D9 /* UIViewRepresentableBootCamp.swift */; };
+		D276ABAA28B369EB006912D9 /* UIViewControllerRepresentableBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D276ABA928B369EB006912D9 /* UIViewControllerRepresentableBootCamp.swift */; };
 		D2FE83EC28B2593A00B20A03 /* AppTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FE83EB28B2593A00B20A03 /* AppTabBarView.swift */; };
 		D2FE83EE28B25A0800B20A03 /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FE83ED28B25A0800B20A03 /* CustomTabBarView.swift */; };
 		D2FE83F028B25C3100B20A03 /* CustomTabBarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FE83EF28B25C3100B20A03 /* CustomTabBarContainerView.swift */; };
@@ -54,6 +55,7 @@
 		D24A964E28B1EEAE00C10A3C /* GeometryPreferenceBootCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryPreferenceBootCamp.swift; sourceTree = "<group>"; };
 		D24A965028B1F2F600C10A3C /* ScrollViewOffsetPreferenceBootCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewOffsetPreferenceBootCamp.swift; sourceTree = "<group>"; };
 		D276ABA728B35015006912D9 /* UIViewRepresentableBootCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewRepresentableBootCamp.swift; sourceTree = "<group>"; };
+		D276ABA928B369EB006912D9 /* UIViewControllerRepresentableBootCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerRepresentableBootCamp.swift; sourceTree = "<group>"; };
 		D2FE83EB28B2593A00B20A03 /* AppTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarView.swift; sourceTree = "<group>"; };
 		D2FE83ED28B25A0800B20A03 /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
 		D2FE83EF28B25C3100B20A03 /* CustomTabBarContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarContainerView.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				D2FE83F528B2735800B20A03 /* CustomNavigationView */,
 				D24A964D28B1EE9D00C10A3C /* PreferenceKeyBootCamp */,
 				D276ABA728B35015006912D9 /* UIViewRepresentableBootCamp.swift */,
+				D276ABA928B369EB006912D9 /* UIViewControllerRepresentableBootCamp.swift */,
 				D20BCF4028B113D60069621B /* Assets.xcassets */,
 				D20BCF4228B113D60069621B /* Preview Content */,
 			);
@@ -230,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D276ABAA28B369EB006912D9 /* UIViewControllerRepresentableBootCamp.swift in Sources */,
 				D2FE83F728B2741C00B20A03 /* AppNavBarView.swift in Sources */,
 				D2FE83EC28B2593A00B20A03 /* AppTabBarView.swift in Sources */,
 				D24A964C28B1E1A900C10A3C /* PreferenceKeyBootCamp.swift in Sources */,
