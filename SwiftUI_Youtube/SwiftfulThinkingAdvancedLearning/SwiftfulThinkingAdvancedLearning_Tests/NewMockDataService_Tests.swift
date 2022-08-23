@@ -67,7 +67,7 @@ class NewMockDataService_Tests: XCTestCase {
         dataService.downloadItemsWithCombine()
             .sink { completion in
                 switch completion {
-                case .failure(let error): XCTFail()
+                case .failure(_): XCTFail()
                 case .finished: expectation.fulfill()
                 }
             } receiveValue: { returnedItems in
