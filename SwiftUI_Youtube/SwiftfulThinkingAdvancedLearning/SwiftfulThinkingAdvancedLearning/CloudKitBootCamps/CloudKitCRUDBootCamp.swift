@@ -11,6 +11,7 @@ import CloudKit
 struct FruitModel: Identifiable {
     let id = UUID().uuidString
     let name: String
+    let imageURL: URL?
     let record: CKRecord
 }
 
@@ -35,7 +36,19 @@ class CloudKitCRUDBootCampViewModel: ObservableObject {
     private func addItem(name: String) {
         let newFruit = CKRecord(recordType: "Fruits")
         newFruit["name"] = name
-        saveItem(record: newFruit)
+        
+        guard
+            let image = UIImage(named: "peach"),
+            let url = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first?.appendingPathComponent("peach.png"),
+            let data = image.pngData() else { return }
+        do {
+            try data.write(to: url)
+            let asset = CKAsset(fileURL: url)
+            newFruit["image"] = asset
+            saveItem(record: newFruit)
+        } catch {
+            print(error.localizedDescription)
+        }
     }
     
     private func saveItem(record: CKRecord) {
@@ -63,7 +76,9 @@ class CloudKitCRUDBootCampViewModel: ObservableObject {
                 switch returnedResult {
                 case .success(let record):
                     guard let name = record["name"] as? String else { return }
-                    returnedItems.append(FruitModel(name: name, record: record))
+                    let imageAsset = record["image"] as? CKAsset
+                    let imageURL = imageAsset?.fileURL
+                    returnedItems.append(FruitModel(name: name, imageURL: imageURL, record: record))
                     print(name)
                     break
                 case .failure(let error):
@@ -73,7 +88,9 @@ class CloudKitCRUDBootCampViewModel: ObservableObject {
         } else {
             queryOperation.recordFetchedBlock = { returnedRecord in
                 guard let name = returnedRecord["name"] as? String else { return }
-                returnedItems.append(FruitModel(name: name, record: returnedRecord))
+                let imageAsset = returnedRecord["image"] as? CKAsset
+                let imageURL = imageAsset?.fileURL
+                returnedItems.append(FruitModel(name: name, imageURL: imageURL, record: returnedRecord))
             }
         }
         if #available(iOS 15, *) {
@@ -132,13 +149,23 @@ struct CloudKitCRUDBootCamp: View {
                 button
                 List {
                     ForEach(viewModel.fruits) { fruit in
-                        Text(fruit.name)
-                            .font(.headline)
-                            .fontWeight(.semibold)
-                            .onTapGesture {
-                                viewModel.selectedFruit = fruit
-                                viewModel.isUpdatingItem = true
+                        HStack {
+                            Text(fruit.name)
+                                .font(.headline)
+                                .fontWeight(.semibold)
+                            Spacer()
+                            if let url = fruit.imageURL, let data = try? Data(contentsOf: url), let image = UIImage(data: data) {
+                                Image(uiImage: image)
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 50, height: 50)
                             }
+                        }
+                        .contentShape(Rectangle())
+                        .onTapGesture {
+                            viewModel.selectedFruit = fruit
+                            viewModel.isUpdatingItem = true
+                        }
                     }
                     .onDelete(perform: viewModel.deleteItem)
                 }

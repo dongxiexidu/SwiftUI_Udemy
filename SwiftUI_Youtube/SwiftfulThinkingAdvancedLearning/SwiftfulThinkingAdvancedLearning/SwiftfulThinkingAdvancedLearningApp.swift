@@ -19,6 +19,7 @@ struct SwiftfulThinkingAdvancedLearningApp: App {
     var body: some Scene {
         WindowGroup {
             CloudKitCRUDBootCamp()
+//            CloudKitPushNotificationBootCamp()
         }
     }
 }
