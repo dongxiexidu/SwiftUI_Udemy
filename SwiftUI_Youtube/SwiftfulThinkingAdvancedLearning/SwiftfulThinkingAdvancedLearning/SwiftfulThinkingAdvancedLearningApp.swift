@@ -18,7 +18,7 @@ struct SwiftfulThinkingAdvancedLearningApp: App {
     }
     var body: some Scene {
         WindowGroup {
-            UITestingBootCampView(currentUserIsSignedIn: currentUserIsSignedIn)
+            AdvancedCombineBootCamp(dataService: AdvancedCombineDataService())
         }
     }
 }
