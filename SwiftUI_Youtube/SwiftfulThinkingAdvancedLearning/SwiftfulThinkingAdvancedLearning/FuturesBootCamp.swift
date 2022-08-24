@@ -12,10 +12,6 @@ import Combine
 // download with @escaping closures
 // convert @escaping closure to Combine
 
-class FuturesBootCampDataService {
-    
-}
-
 class FuturesBootCampViewModel: ObservableObject {
     @Published var title: String = "Starting Title"
     var cancellables = Set<AnyCancellable>()

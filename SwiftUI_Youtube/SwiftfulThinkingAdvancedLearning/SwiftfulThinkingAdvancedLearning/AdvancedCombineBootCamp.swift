@@ -246,7 +246,7 @@ class AdvancedCombineBootCampViewModel: ObservableObject {
             .sink { completion in
                 switch completion {
                 case .finished: break
-                case .failure(let error): break
+                case .failure(_): break
                 }
             } receiveValue: { [weak self] returnedData in
                 guard let self = self else { return }

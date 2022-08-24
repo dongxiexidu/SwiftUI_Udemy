@@ -38,6 +38,9 @@
 		D276ABE928B4C404006912D9 /* UITestingBootCampView_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D276ABE828B4C404006912D9 /* UITestingBootCampView_UITests.swift */; };
 		D276ABEB28B51885006912D9 /* AdvancedCombineBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D276ABEA28B51885006912D9 /* AdvancedCombineBootCamp.swift */; };
 		D276ABEF28B60AAB006912D9 /* FuturesBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D276ABEE28B60AAB006912D9 /* FuturesBootCamp.swift */; };
+		D276ABF228B64072006912D9 /* CloudKitUserBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D276ABF128B64072006912D9 /* CloudKitUserBootCamp.swift */; };
+		D276ABF628B640FD006912D9 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D276ABF528B640FD006912D9 /* CloudKit.framework */; };
+		D276ABF828B64BDF006912D9 /* CloudKitCRUDBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D276ABF728B64BDF006912D9 /* CloudKitCRUDBootCamp.swift */; };
 		D2FE83EC28B2593A00B20A03 /* AppTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FE83EB28B2593A00B20A03 /* AppTabBarView.swift */; };
 		D2FE83EE28B25A0800B20A03 /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FE83ED28B25A0800B20A03 /* CustomTabBarView.swift */; };
 		D2FE83F028B25C3100B20A03 /* CustomTabBarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FE83EF28B25C3100B20A03 /* CustomTabBarContainerView.swift */; };
@@ -103,6 +106,10 @@
 		D276ABE828B4C404006912D9 /* UITestingBootCampView_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestingBootCampView_UITests.swift; sourceTree = "<group>"; };
 		D276ABEA28B51885006912D9 /* AdvancedCombineBootCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedCombineBootCamp.swift; sourceTree = "<group>"; };
 		D276ABEE28B60AAB006912D9 /* FuturesBootCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuturesBootCamp.swift; sourceTree = "<group>"; };
+		D276ABF128B64072006912D9 /* CloudKitUserBootCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitUserBootCamp.swift; sourceTree = "<group>"; };
+		D276ABF328B640C4006912D9 /* SwiftfulThinkingAdvancedLearning.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftfulThinkingAdvancedLearning.entitlements; sourceTree = "<group>"; };
+		D276ABF528B640FD006912D9 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		D276ABF728B64BDF006912D9 /* CloudKitCRUDBootCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitCRUDBootCamp.swift; sourceTree = "<group>"; };
 		D2FE83EB28B2593A00B20A03 /* AppTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarView.swift; sourceTree = "<group>"; };
 		D2FE83ED28B25A0800B20A03 /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
 		D2FE83EF28B25C3100B20A03 /* CustomTabBarContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarContainerView.swift; sourceTree = "<group>"; };
@@ -121,6 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D276ABF628B640FD006912D9 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +156,7 @@
 				D276ABBB28B3BD7C006912D9 /* SwiftfulThinkingAdvancedLearning_Tests */,
 				D276ABDE28B4B64F006912D9 /* SwiftfulThinkingAdvancedLearning_UITests */,
 				D20BCF3A28B113D50069621B /* Products */,
+				D276ABF428B640FD006912D9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -164,6 +173,7 @@
 		D20BCF3B28B113D50069621B /* SwiftfulThinkingAdvancedLearning */ = {
 			isa = PBXGroup;
 			children = (
+				D276ABF328B640C4006912D9 /* SwiftfulThinkingAdvancedLearning.entitlements */,
 				D20BCF3C28B113D50069621B /* SwiftfulThinkingAdvancedLearningApp.swift */,
 				D20BCF4A28B114270069621B /* ViewModifierBootCamp.swift */,
 				D20BCF4C28B11A610069621B /* ButtonStyleBootCamp.swift */,
@@ -185,6 +195,7 @@
 				D276ABD528B4B0C6006912D9 /* UITestingBootCampView.swift */,
 				D276ABEA28B51885006912D9 /* AdvancedCombineBootCamp.swift */,
 				D276ABEE28B60AAB006912D9 /* FuturesBootCamp.swift */,
+				D276ABF028B6405F006912D9 /* CloudKitBootCamps */,
 				D20BCF4028B113D60069621B /* Assets.xcassets */,
 				D20BCF4228B113D60069621B /* Preview Content */,
 			);
@@ -237,6 +248,23 @@
 				D276ABE128B4B64F006912D9 /* SwiftfulThinkingAdvancedLearning_UITestsLaunchTests.swift */,
 			);
 			path = SwiftfulThinkingAdvancedLearning_UITests;
+			sourceTree = "<group>";
+		};
+		D276ABF028B6405F006912D9 /* CloudKitBootCamps */ = {
+			isa = PBXGroup;
+			children = (
+				D276ABF128B64072006912D9 /* CloudKitUserBootCamp.swift */,
+				D276ABF728B64BDF006912D9 /* CloudKitCRUDBootCamp.swift */,
+			);
+			path = CloudKitBootCamps;
+			sourceTree = "<group>";
+		};
+		D276ABF428B640FD006912D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D276ABF528B640FD006912D9 /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D2FE83EA28B2592700B20A03 /* CustomTabBar */ = {
@@ -397,6 +425,7 @@
 				D276ABC428B3BE42006912D9 /* UnitTestingBootCampViewModel.swift in Sources */,
 				D276ABEB28B51885006912D9 /* AdvancedCombineBootCamp.swift in Sources */,
 				D276ABC828B467F6006912D9 /* NewMockDataService.swift in Sources */,
+				D276ABF828B64BDF006912D9 /* CloudKitCRUDBootCamp.swift in Sources */,
 				D276ABD628B4B0C6006912D9 /* UITestingBootCampView.swift in Sources */,
 				D276ABAA28B369EB006912D9 /* UIViewControllerRepresentableBootCamp.swift in Sources */,
 				D2FE83F728B2741C00B20A03 /* AppNavBarView.swift in Sources */,
@@ -422,6 +451,7 @@
 				D20BCF4F28B12B390069621B /* TransitionsBootCamp.swift in Sources */,
 				D24A964A28B1D87900C10A3C /* ViewBuilderBootCamp.swift in Sources */,
 				D2FE83FB28B277C100B20A03 /* CustomNavBarContainerView.swift in Sources */,
+				D276ABF228B64072006912D9 /* CloudKitUserBootCamp.swift in Sources */,
 				D24A964628B1CB7500C10A3C /* CustomShapeAnimationBootCamp.swift in Sources */,
 				D20BCF5128B131770069621B /* MatchedGeometryEffect.swift in Sources */,
 				D276ABAC28B39BEC006912D9 /* ProtocolsBootCamp.swift in Sources */,
@@ -586,6 +616,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftfulThinkingAdvancedLearning/SwiftfulThinkingAdvancedLearning.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftfulThinkingAdvancedLearning/Preview Content\"";
@@ -615,6 +646,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftfulThinkingAdvancedLearning/SwiftfulThinkingAdvancedLearning.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftfulThinkingAdvancedLearning/Preview Content\"";
