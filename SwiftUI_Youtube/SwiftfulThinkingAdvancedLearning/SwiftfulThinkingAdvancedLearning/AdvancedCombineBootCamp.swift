@@ -25,8 +25,6 @@ class AdvancedCombineDataService {
         let items = [1, 1, 1, 1, 1, 2, 3, 5, 6, 7, 8, 9, 11, 10, 1, 1, 1]
         for index in items.indices {
             DispatchQueue.main.asyncAfter(deadline: .now() + Double(index) * 0.3) {
-////                self.basicPublisher = items[index]
-////                self.currentValuePublisher.send(items[index])
                 self.passThroughPublisher.send(items[index])
                 if index >= 4 && index < 8 {
                     self.boolPublisher.send(true)
@@ -38,15 +36,6 @@ class AdvancedCombineDataService {
                     self.passThroughPublisher.send(completion: .finished)
                 }
             }
-//            DispatchQueue.main.asyncAfter(deadline: .now()) {
-//                self.passThroughPublisher.send(1)
-//            }
-//            DispatchQueue.main.asyncAfter(deadline: .now() + 0.20) {
-//                self.passThroughPublisher.send(2)
-//            }
-//            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-//                self.passThroughPublisher.send(3)
-//            }
         }
     }
 }
