@@ -142,7 +142,7 @@ extension CloudKitUtility {
         }
     }
     
-    static func fetch<T:CloudKitableProtocol>(predicate: NSPredicate,
+    static private func fetch<T:CloudKitableProtocol>(predicate: NSPredicate,
                       recordType: CKRecord.RecordType,
                       sortDescriptors: [NSSortDescriptor]? = nil,
                       resultsLimit: Int? = nil,
@@ -161,7 +161,7 @@ extension CloudKitUtility {
         add(operation: operation)
     }
     
-    static func addRecordMatchedBlock<T:CloudKitableProtocol>(queryOperation: CKQueryOperation, completionHandelr: @escaping (_ item: T) -> ()) {
+    static private func addRecordMatchedBlock<T:CloudKitableProtocol>(queryOperation: CKQueryOperation, completionHandelr: @escaping (_ item: T) -> ()) {
         if #available(iOS 15, *) {
             queryOperation.recordMatchedBlock = { (returnedRecordId, returnedResult) in
                 switch returnedResult {
@@ -194,7 +194,7 @@ extension CloudKitUtility {
         }
     }
     
-    static func add(operation: CKDatabaseOperation) {
+    static private func add(operation: CKDatabaseOperation) {
         CKContainer.default().publicCloudDatabase.add(operation)
     }
     

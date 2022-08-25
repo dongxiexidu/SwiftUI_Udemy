@@ -38,19 +38,6 @@ class CloudKitUserBootCampViewModel: ObservableObject {
                 }
             }
             .store(in: &cancellables)
-
-        
-//        CloudKitUtility.getiCloudStatus { [weak self] completion in
-//            DispatchQueue.main.async {
-//                guard let self = self else { return }
-//                switch completion {
-//                case .success(_):
-//                    self.isSignedIntoiCloud = true
-//                case .failure(let error):
-//                    self.error = error.localizedDescription
-//                }
-//            }
-//        }
     }
     
     func requestPermission() {

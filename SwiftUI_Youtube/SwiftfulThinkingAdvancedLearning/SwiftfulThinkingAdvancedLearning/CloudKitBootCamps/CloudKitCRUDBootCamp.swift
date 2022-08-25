@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import CloudKit
 import Combine
 
 class CloudKitCRUDBootCampViewModel: ObservableObject {
