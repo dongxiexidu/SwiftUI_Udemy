@@ -42,6 +42,8 @@
 		D276ABF628B640FD006912D9 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D276ABF528B640FD006912D9 /* CloudKit.framework */; };
 		D276ABF828B64BDF006912D9 /* CloudKitCRUDBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D276ABF728B64BDF006912D9 /* CloudKitCRUDBootCamp.swift */; };
 		D276ABFA28B67000006912D9 /* CloudKitPushNotificationBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D276ABF928B67000006912D9 /* CloudKitPushNotificationBootCamp.swift */; };
+		D276ABFC28B6EFA1006912D9 /* CloudKitUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D276ABFB28B6EFA1006912D9 /* CloudKitUtility.swift */; };
+		D276AC4C28B74ABB006912D9 /* CloudKitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D276AC4B28B74ABB006912D9 /* CloudKitModel.swift */; };
 		D2FE83EC28B2593A00B20A03 /* AppTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FE83EB28B2593A00B20A03 /* AppTabBarView.swift */; };
 		D2FE83EE28B25A0800B20A03 /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FE83ED28B25A0800B20A03 /* CustomTabBarView.swift */; };
 		D2FE83F028B25C3100B20A03 /* CustomTabBarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FE83EF28B25C3100B20A03 /* CustomTabBarContainerView.swift */; };
@@ -112,6 +114,8 @@
 		D276ABF528B640FD006912D9 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		D276ABF728B64BDF006912D9 /* CloudKitCRUDBootCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitCRUDBootCamp.swift; sourceTree = "<group>"; };
 		D276ABF928B67000006912D9 /* CloudKitPushNotificationBootCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitPushNotificationBootCamp.swift; sourceTree = "<group>"; };
+		D276ABFB28B6EFA1006912D9 /* CloudKitUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitUtility.swift; sourceTree = "<group>"; };
+		D276AC4B28B74ABB006912D9 /* CloudKitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitModel.swift; sourceTree = "<group>"; };
 		D2FE83EB28B2593A00B20A03 /* AppTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarView.swift; sourceTree = "<group>"; };
 		D2FE83ED28B25A0800B20A03 /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
 		D2FE83EF28B25C3100B20A03 /* CustomTabBarContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarContainerView.swift; sourceTree = "<group>"; };
@@ -258,6 +262,8 @@
 				D276ABF128B64072006912D9 /* CloudKitUserBootCamp.swift */,
 				D276ABF728B64BDF006912D9 /* CloudKitCRUDBootCamp.swift */,
 				D276ABF928B67000006912D9 /* CloudKitPushNotificationBootCamp.swift */,
+				D276ABFB28B6EFA1006912D9 /* CloudKitUtility.swift */,
+				D276AC4B28B74ABB006912D9 /* CloudKitModel.swift */,
 			);
 			path = CloudKitBootCamps;
 			sourceTree = "<group>";
@@ -434,6 +440,7 @@
 				D2FE83F728B2741C00B20A03 /* AppNavBarView.swift in Sources */,
 				D2FE83EC28B2593A00B20A03 /* AppTabBarView.swift in Sources */,
 				D24A964C28B1E1A900C10A3C /* PreferenceKeyBootCamp.swift in Sources */,
+				D276ABFC28B6EFA1006912D9 /* CloudKitUtility.swift in Sources */,
 				D20BCF4B28B114270069621B /* ViewModifierBootCamp.swift in Sources */,
 				D276ABEF28B60AAB006912D9 /* FuturesBootCamp.swift in Sources */,
 				D20BCF5328B138320069621B /* CustomShapesBootCamp.swift in Sources */,
@@ -460,6 +467,7 @@
 				D20BCF5128B131770069621B /* MatchedGeometryEffect.swift in Sources */,
 				D276ABAC28B39BEC006912D9 /* ProtocolsBootCamp.swift in Sources */,
 				D276ABB328B3BB4C006912D9 /* UnitTestingBootCampView.swift in Sources */,
+				D276AC4C28B74ABB006912D9 /* CloudKitModel.swift in Sources */,
 				D2FE83F028B25C3100B20A03 /* CustomTabBarContainerView.swift in Sources */,
 				D276ABA828B35015006912D9 /* UIViewRepresentableBootCamp.swift in Sources */,
 			);
