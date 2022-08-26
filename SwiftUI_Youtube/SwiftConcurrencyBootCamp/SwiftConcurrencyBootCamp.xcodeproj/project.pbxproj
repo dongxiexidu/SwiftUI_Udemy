@@ -11,6 +11,7 @@
 		D2D78AF428B8F9BB00AA8BFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2D78AF328B8F9BB00AA8BFB /* Assets.xcassets */; };
 		D2D78AF728B8F9BB00AA8BFB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2D78AF628B8F9BB00AA8BFB /* Preview Assets.xcassets */; };
 		D2D78AFE28B8F9CE00AA8BFB /* DoCatchTryThrowBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D78AFD28B8F9CE00AA8BFB /* DoCatchTryThrowBootCamp.swift */; };
+		D2D78B0028B906B200AA8BFB /* DownloadImageAsyncBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D78AFF28B906B200AA8BFB /* DownloadImageAsyncBootCamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		D2D78AF328B8F9BB00AA8BFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2D78AF628B8F9BB00AA8BFB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D2D78AFD28B8F9CE00AA8BFB /* DoCatchTryThrowBootCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoCatchTryThrowBootCamp.swift; sourceTree = "<group>"; };
+		D2D78AFF28B906B200AA8BFB /* DownloadImageAsyncBootCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadImageAsyncBootCamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				D2D78AEF28B8F9BA00AA8BFB /* SwiftConcurrencyBootCampApp.swift */,
 				D2D78AFD28B8F9CE00AA8BFB /* DoCatchTryThrowBootCamp.swift */,
+				D2D78AFF28B906B200AA8BFB /* DownloadImageAsyncBootCamp.swift */,
 				D2D78AF328B8F9BB00AA8BFB /* Assets.xcassets */,
 				D2D78AF528B8F9BB00AA8BFB /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2D78AFE28B8F9CE00AA8BFB /* DoCatchTryThrowBootCamp.swift in Sources */,
+				D2D78B0028B906B200AA8BFB /* DownloadImageAsyncBootCamp.swift in Sources */,
 				D2D78AF028B8F9BA00AA8BFB /* SwiftConcurrencyBootCampApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
