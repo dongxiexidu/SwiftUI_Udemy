@@ -15,7 +15,6 @@ actor SendableBootCampActor {
     func updateDataFromDatabase2(userInfo: SendableBootCampUserInfoClass) {
         // Update Data
     }
-    
 }
 
 struct SendableBootCampUserInfoStruct: Sendable {
