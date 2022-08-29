@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftConcurrencyBootCampApp: App {
     var body: some Scene {
         WindowGroup {
-            CheckedContinuationsBootCamp(dataService: CheckedContinuationBootCampDataService(), urlString: "https://picsum.photos/1000")
+            StructClassActorBootCampHomeView()
         }
     }
 }
