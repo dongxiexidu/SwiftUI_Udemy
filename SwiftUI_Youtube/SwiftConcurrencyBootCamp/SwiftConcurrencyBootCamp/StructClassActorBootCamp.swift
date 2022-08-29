@@ -334,7 +334,9 @@ extension StructClassActorBootCamp {
         // strongClass1 inside class2(Weak Class instance) -> nil, then ARC -> 0, then class1 -> deinit
         // weak reference -> make its non-having strong reference less than strong reference
     }
-    
+}
+
+extension StructClassActorBootCamp {
     private func actorTest() {
         Task {
             // Need to get async -> Call them inside 'Task' block
