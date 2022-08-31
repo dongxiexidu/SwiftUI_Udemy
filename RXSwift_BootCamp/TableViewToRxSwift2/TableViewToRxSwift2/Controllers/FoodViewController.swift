@@ -6,14 +6,17 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class FoodViewController: UIViewController {
-    
-    var foodImageName: String? = nil
     @IBOutlet weak var foodImage: UIImageView!
+    var foodImageName: String? = nil
+    let foodImageNameRelay: BehaviorRelay = BehaviorRelay<String>(value: "")
+    let disposeBag = DisposeBag()
     override func viewDidLoad() {
         super.viewDidLoad()
-        setFoodImage()
+        setFoodImageRx()
     }
     
     private func setFoodImage() {
@@ -22,4 +25,14 @@ class FoodViewController: UIViewController {
         }
         foodImage.image = UIImage(named: foodImageName)
     }
+    
+    private func setFoodImageRx() {
+        foodImageNameRelay
+            .map{UIImage(named: $0)}
+            .bind(to: foodImage
+                .rx
+                .image)
+            .disposed(by: disposeBag)
+    }
 }
+

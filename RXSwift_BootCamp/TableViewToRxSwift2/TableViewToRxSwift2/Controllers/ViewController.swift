@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Menu"
-        tableView.delegate = self
+//        tableView.delegate = self
         setTableViewBindRx()
         setTableViewModelSelectedRx()
     }
@@ -42,7 +42,7 @@ class ViewController: UIViewController {
                 guard let navDetailVC = self.storyboard?.instantiateViewController(withIdentifier: "FoodViewController") as? FoodViewController else {
                     return
                 }
-                navDetailVC.foodImageName = foodModel.imageName
+                navDetailVC.foodImageNameRelay.accept(foodModel.imageName)
                 self.navigationController?.pushViewController(navDetailVC, animated: true)
             })
             .disposed(by: disposeBag)
@@ -64,13 +64,13 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let navDetailVC = storyboard?.instantiateViewController(withIdentifier: "FoodViewController") as? FoodViewController else {
-            return
-        }
-        navDetailVC.foodImageName = tableViewItems[indexPath.row].imageName
-        navigationController?.pushViewController(navDetailVC, animated: true)
-    }
-}
+//extension ViewController: UITableViewDelegate {
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        guard let navDetailVC = storyboard?.instantiateViewController(withIdentifier: "FoodViewController") as? FoodViewController else {
+//            return
+//        }
+//        navDetailVC.foodImageName = tableViewItems[indexPath.row].imageName
+//        navigationController?.pushViewController(navDetailVC, animated: true)
+//    }
+//}
 
