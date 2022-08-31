@@ -8,11 +8,29 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import RxDataSources
 
 class ViewController: UIViewController {
     let tableViewItems = [FoodModel(name: "Coke", imageName: "coke"), FoodModel(name: "Hamburger", imageName: "hamburger"), FoodModel(name: "Pizza", imageName: "pizza"), FoodModel(name: "Bulgogi", imageName: "bulgogi")]
+    let tableViewItemSection = [SectionModel(header: "Main Courses", items: [FoodModel(name: "Hamburger", imageName: "hamburger"), FoodModel(name: "Pizza", imageName: "pizza"), FoodModel(name: "Bulgogi", imageName: "bulgogi")]), SectionModel(header: "Desserts", items: [FoodModel(name: "Coke", imageName: "coke")])]
     lazy var tableViewItemsRx = BehaviorRelay.init(value: tableViewItems)
+    lazy var tableViewItemSectionsRx = BehaviorRelay.init(value: tableViewItemSection)
     let disposeBag = DisposeBag()
+    let dataSource = RxTableViewSectionedReloadDataSource<SectionModel>(configureCell: {
+        ds, tv, indexPath, item in
+        let cell: CustomTableViewCell
+        if let dequeuedCell = tv.dequeueReusableCell(withIdentifier: "customTableViewCell", for: indexPath) as? CustomTableViewCell {
+            cell = dequeuedCell
+        } else {
+            cell = CustomTableViewCell()
+        }
+        cell.cellLabel.text = item.name
+        cell.cellImage.image = UIImage(named: item.imageName)
+        return cell
+    }, titleForHeaderInSection: {
+        ds, index in
+        return ds.sectionModels[index].header
+    })
 
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
@@ -20,7 +38,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         title = "Menu"
 //        tableView.delegate = self
-        setSearchingTableView()
+//        setSearchingTableView()
+        setSearchingTableViewWithSection()
         setTableViewModelSelectedRx()
     }
     
@@ -61,6 +80,27 @@ class ViewController: UIViewController {
                 navDetailVC.foodImageName = foodModel.imageName
                 self.navigationController?.pushViewController(navDetailVC, animated: true)
             })
+            .disposed(by: disposeBag)
+    }
+    
+    private func setSearchingTableViewWithSection() {
+        searchBar.rx.text.orEmpty
+            .throttle(.milliseconds(300), scheduler: MainScheduler.instance)
+            .distinctUntilChanged()
+            .map { query in
+                self.tableViewItemSectionsRx.value.map { sectionModel in
+                    SectionModel(header: sectionModel.header, items: sectionModel.items.filter({ foodModel in
+                        if query.isEmpty || foodModel.name.lowercased().contains(query.lowercased()) {
+                            return true
+                        } else {
+                            return false
+                        }
+                    }))
+                }
+            }
+            .bind(to: tableView
+                .rx
+                .items(dataSource: dataSource))
             .disposed(by: disposeBag)
     }
     

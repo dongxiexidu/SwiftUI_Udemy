@@ -17,6 +17,7 @@
 		D2FFED8D28BF6F8100C861F4 /* FoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FFED8C28BF6F8100C861F4 /* FoodModel.swift */; };
 		D2FFED9228BF715000C861F4 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FFED9128BF715000C861F4 /* CustomTableViewCell.swift */; };
 		D2FFED9428BF76FC00C861F4 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FFED9328BF76FC00C861F4 /* FoodViewController.swift */; };
+		D2FFED9728BF98F700C861F4 /* SectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FFED9628BF98F700C861F4 /* SectionModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		D2FFED9128BF715000C861F4 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		D2FFED9328BF76FC00C861F4 /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
 		D2FFED9528BF80A700C861F4 /* SubjectPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SubjectPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		D2FFED9628BF98F700C861F4 /* SectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				D2FFED8C28BF6F8100C861F4 /* FoodModel.swift */,
+				D2FFED9628BF98F700C861F4 /* SectionModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				D2FFED7928BF6F6700C861F4 /* AppDelegate.swift in Sources */,
 				D2FFED7B28BF6F6700C861F4 /* SceneDelegate.swift in Sources */,
 				D2FFED9428BF76FC00C861F4 /* FoodViewController.swift in Sources */,
+				D2FFED9728BF98F700C861F4 /* SectionModel.swift in Sources */,
 				D2FFED8D28BF6F8100C861F4 /* FoodModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,5 +8,6 @@ target 'TableViewToRxSwift2' do
   # Pods for TableViewToRxSwift2
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'RxDataSources'
 
 end
