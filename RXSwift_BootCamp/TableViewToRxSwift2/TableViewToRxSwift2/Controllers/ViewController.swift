@@ -11,14 +11,14 @@ import RxCocoa
 
 class ViewController: UIViewController {
     let tableViewItems = [FoodModel(name: "Coke", imageName: "coke"), FoodModel(name: "Hamburger", imageName: "hamburger"), FoodModel(name: "Pizza", imageName: "pizza"), FoodModel(name: "Bulgogi", imageName: "bulgogi")]
-    lazy var tableViewItemsRx = Observable.just([FoodModel(name: "Coke", imageName: "coke"), FoodModel(name: "Hamburger", imageName: "hamburger"), FoodModel(name: "Pizza", imageName: "pizza"), FoodModel(name: "Bulgogi", imageName: "bulgogi")])
+    lazy var tableViewItemsRx = Observable.just(tableViewItems)
     let disposeBag = DisposeBag()
 
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Menu"
-//        tableView.delegate = self
+        tableView.delegate = self
         setTableViewBindRx()
         setTableViewModelSelectedRx()
     }
@@ -64,13 +64,13 @@ class ViewController: UIViewController {
     }
 }
 
-//extension ViewController: UITableViewDelegate {
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        guard let navDetailVC = storyboard?.instantiateViewController(withIdentifier: "FoodViewController") as? FoodViewController else {
-//            return
-//        }
-//        navDetailVC.foodImageName = tableViewItems[indexPath.row].imageName
-//        navigationController?.pushViewController(navDetailVC, animated: true)
-//    }
-//}
+extension ViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let navDetailVC = storyboard?.instantiateViewController(withIdentifier: "FoodViewController") as? FoodViewController else {
+            return
+        }
+        navDetailVC.foodImageName = tableViewItems[indexPath.row].imageName
+        navigationController?.pushViewController(navDetailVC, animated: true)
+    }
+}
 

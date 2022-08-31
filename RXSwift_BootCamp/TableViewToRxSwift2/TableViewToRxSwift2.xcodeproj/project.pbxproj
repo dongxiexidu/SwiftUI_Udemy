@@ -34,6 +34,7 @@
 		D2FFED8C28BF6F8100C861F4 /* FoodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodModel.swift; sourceTree = "<group>"; };
 		D2FFED9128BF715000C861F4 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		D2FFED9328BF76FC00C861F4 /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
+		D2FFED9528BF80A700C861F4 /* SubjectPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SubjectPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +69,7 @@
 		D2FFED6C28BF6F6700C861F4 = {
 			isa = PBXGroup;
 			children = (
+				D2FFED9528BF80A700C861F4 /* SubjectPlayground.playground */,
 				D2FFED7728BF6F6700C861F4 /* TableViewToRxSwift2 */,
 				D2FFED7628BF6F6700C861F4 /* Products */,
 				5C872BC59504543D00232E53 /* Pods */,
