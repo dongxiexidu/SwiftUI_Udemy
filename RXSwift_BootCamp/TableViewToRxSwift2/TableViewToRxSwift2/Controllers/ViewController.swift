@@ -11,15 +11,16 @@ import RxCocoa
 
 class ViewController: UIViewController {
     let tableViewItems = [FoodModel(name: "Coke", imageName: "coke"), FoodModel(name: "Hamburger", imageName: "hamburger"), FoodModel(name: "Pizza", imageName: "pizza"), FoodModel(name: "Bulgogi", imageName: "bulgogi")]
-    lazy var tableViewItemsRx = Observable.just(tableViewItems)
+    lazy var tableViewItemsRx = BehaviorRelay.init(value: tableViewItems)
     let disposeBag = DisposeBag()
 
+    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Menu"
 //        tableView.delegate = self
-        setTableViewBindRx()
+        setSearchingTableView()
         setTableViewModelSelectedRx()
     }
     
@@ -61,6 +62,29 @@ class ViewController: UIViewController {
                 self.navigationController?.pushViewController(navDetailVC, animated: true)
             })
             .disposed(by: disposeBag)
+    }
+    
+    private func setSearchingTableView() {
+        searchBar.rx.text.orEmpty
+            .throttle(.milliseconds(300), scheduler: MainScheduler.instance)
+            .distinctUntilChanged()
+            .map { query in
+                self.tableViewItemsRx.value.filter { foodModel in
+                    if query.isEmpty || foodModel.name.lowercased().contains(query.lowercased()) {
+                        return true
+                    } else {
+                        return false
+                    }
+                }
+            }
+            .bind(to: tableView
+                .rx
+                .items(cellIdentifier: "customTableViewCell", cellType: CustomTableViewCell.self)) {
+                    (tv, tableViewItem, cell) in
+                    cell.cellLabel.text = tableViewItem.name
+                    cell.cellImage.image = UIImage(named: tableViewItem.imageName)
+                }
+                .disposed(by: disposeBag)
     }
 }
 
