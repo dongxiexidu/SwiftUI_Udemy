@@ -58,6 +58,7 @@ class ViewController: UIViewController {
         tableView
             .rx
             .modelSelected(FoodModel.self)
+//            .debug("TEST DEBUG")
             .subscribe(onNext: { foodModel in
                 guard let navDetailVC = self.storyboard?.instantiateViewController(withIdentifier: "FoodViewController") as? FoodViewController else {
                     return

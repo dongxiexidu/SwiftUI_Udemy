@@ -28,7 +28,10 @@ class FoodViewController: UIViewController {
     
     private func setFoodImageRx() {
         foodImageNameRelay
-            .map{UIImage(named: $0)}
+            .map({ name in
+                print("Resources count \(RxSwift.Resources.total)")
+                return UIImage.init(named: name)!
+            })
             .bind(to: foodImage
                 .rx
                 .image)
