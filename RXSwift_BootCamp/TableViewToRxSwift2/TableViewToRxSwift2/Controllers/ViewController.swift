@@ -12,8 +12,8 @@ import RxDataSources
 
 class ViewController: UIViewController {
     let tableViewItems = [FoodModel(name: "Coke", imageName: "coke"), FoodModel(name: "Hamburger", imageName: "hamburger"), FoodModel(name: "Pizza", imageName: "pizza"), FoodModel(name: "Bulgogi", imageName: "bulgogi")]
-    let tableViewItemSection = [SectionModel(header: "Main Courses", items: [FoodModel(name: "Hamburger", imageName: "hamburger"), FoodModel(name: "Pizza", imageName: "pizza"), FoodModel(name: "Bulgogi", imageName: "bulgogi")]), SectionModel(header: "Desserts", items: [FoodModel(name: "Coke", imageName: "coke")])]
     lazy var tableViewItemsRx = BehaviorRelay.init(value: tableViewItems)
+    let tableViewItemSection = [SectionModel(header: "Main Courses", items: [FoodModel(name: "Hamburger", imageName: "hamburger"), FoodModel(name: "Pizza", imageName: "pizza"), FoodModel(name: "Bulgogi", imageName: "bulgogi")]), SectionModel(header: "Desserts", items: [FoodModel(name: "Coke", imageName: "coke")])]
     lazy var tableViewItemSectionsRx = BehaviorRelay.init(value: tableViewItemSection)
     let disposeBag = DisposeBag()
     let dataSource = RxTableViewSectionedReloadDataSource<SectionModel>(configureCell: {
