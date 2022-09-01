@@ -9,7 +9,7 @@ import Foundation
 
 final class AuthManager {
     static let shared = AuthManager()
-    
+    private var refreshingToken = false
     struct Constants {
         static let clientID = "b3fb76e48578462bb703e0c31a82c615"
         static let clientSecret = "2af1d72913794796b0591a5828120063"
@@ -94,11 +94,38 @@ final class AuthManager {
         .resume()
     }
     
+    private var onRefreshBlocks = [(String)->()]()
+    
+    /// Supplies valid token to be used with APICalls
+    public func withValidToken(completionHandler: @escaping (String) -> ()) {
+        guard !refreshingToken else {
+            // Append the completion
+            onRefreshBlocks.append(completionHandler)
+            return
+        }
+        if shouldRefreshToken {
+            // Refresh
+            refreshIfNeeded { [weak self] success in
+                guard let self = self else { return }
+                if let token = self.accessToken, success {
+                    completionHandler(token)
+                }
+            }
+        } else if let token = accessToken {
+            completionHandler(token)
+        }
+    }
+    
     public func refreshIfNeeded(completionHandler: @escaping (Bool) -> ()) {
+        guard !refreshingToken else { return }
+        guard shouldRefreshToken else {
+            completionHandler(true)
+            return
+        }
         guard let refreshToken = refreshToken else { return }
         // Refresh the token
         guard let url = URL(string: Constants.tokenAPIURLString) else { return }
-        
+        refreshingToken = true
         var components = URLComponents()
         components.queryItems = [
             URLQueryItem(name: "grant_type", value: "refresh_token"),
@@ -118,6 +145,7 @@ final class AuthManager {
         urlRequest.httpBody = components.query?.data(using: .utf8)
         URLSession.shared.dataTask(with: urlRequest) { [weak self] data, response, error in
             guard let self = self else { return }
+            self.refreshingToken = false
             if let error = error {
                 print(error.localizedDescription)
                 completionHandler(false)
@@ -125,6 +153,8 @@ final class AuthManager {
             } else if let data = data {
                 do {
                     let result = try JSONDecoder().decode(AuthResponse.self, from: data)
+                    self.onRefreshBlocks.forEach {$0(result.access_token)}
+                    self.onRefreshBlocks.removeAll()
                     self.cacheToken(result: result)
                     completionHandler(true)
                 } catch {
