@@ -36,6 +36,7 @@ class WelcomeViewController: UIViewController {
     
     @objc private func didTapSignIn() {
         let authVC = AuthViewController()
+        print("DIDTAPSIGNIN")
         authVC.completionHandler = { [weak self] success in
             DispatchQueue.main.async {
                 guard let self = self else { return }
@@ -54,6 +55,14 @@ class WelcomeViewController: UIViewController {
     }
     
     private func handleSignIn(success: Bool) {
-        
+        guard success else {
+            let alert = UIAlertController(title: "Warning!", message: "You should check your ID or PW", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+            present(alert, animated: true)
+            return
+        }
+        let mainAppTabBarVC = TabBarViewController()
+        mainAppTabBarVC.modalPresentationStyle = .fullScreen
+        present(mainAppTabBarVC, animated: true)
     }
 }
