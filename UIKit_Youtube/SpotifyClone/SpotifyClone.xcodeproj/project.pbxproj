@@ -29,6 +29,7 @@
 		D29C690728C086E300AA6AB3 /* AudioTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29C690628C086E300AA6AB3 /* AudioTrack.swift */; };
 		D29C690928C086F200AA6AB3 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29C690828C086F200AA6AB3 /* Artist.swift */; };
 		D29C690B28C086FA00AA6AB3 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29C690A28C086FA00AA6AB3 /* UserProfile.swift */; };
+		D29C690D28C093A900AA6AB3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29C690C28C093A900AA6AB3 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		D29C690628C086E300AA6AB3 /* AudioTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTrack.swift; sourceTree = "<group>"; };
 		D29C690828C086F200AA6AB3 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		D29C690A28C086FA00AA6AB3 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		D29C690C28C093A900AA6AB3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 				D29C68CE28C083A700AA6AB3 /* AppDelegate.swift */,
 				D29C68D028C083A700AA6AB3 /* SceneDelegate.swift */,
 				D29C68D728C083A800AA6AB3 /* Assets.xcassets */,
+				D29C690C28C093A900AA6AB3 /* Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				D29C68EF28C0861800AA6AB3 /* AuthViewController.swift in Sources */,
 				D29C68CF28C083A700AA6AB3 /* AppDelegate.swift in Sources */,
 				D29C690B28C086FA00AA6AB3 /* UserProfile.swift in Sources */,
+				D29C690D28C093A900AA6AB3 /* Extensions.swift in Sources */,
 				D29C68EC28C085E200AA6AB3 /* LibraryViewController.swift in Sources */,
 				D29C690928C086F200AA6AB3 /* Artist.swift in Sources */,
 				D29C68FA28C0865D00AA6AB3 /* PlaylistViewController.swift in Sources */,
