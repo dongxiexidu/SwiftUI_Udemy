@@ -35,6 +35,87 @@ final class APICaller {
         }
     }
     
+    public func getNewReleases(completionHandler: @escaping ((Result<NewReleasesResponse, Error>)->())) {
+        createRequest(with: URL(string: Constants.baseAPIURL + "/browse/new-releases?limit=50"), type: .GET) { request in
+            URLSession.shared.dataTask(with: request) { data, response, error in
+                guard let data = data, error == nil else {
+                    completionHandler(.failure(APIError.failedToGetData))
+                    return
+                }
+                
+                do {
+                    let result = try JSONDecoder().decode(NewReleasesResponse.self, from: data)
+                    completionHandler(.success(result))
+                } catch {
+                    print(error.localizedDescription)
+                    completionHandler(.failure(error))
+                }
+            }
+            .resume()
+        }
+    }
+    
+    public func getFeaturedPlaylists(completionHandler: @escaping((Result<FeaturedPlaylistsResponse, Error>)-> ())) {
+        createRequest(with: URL(string: Constants.baseAPIURL + "/browse/featured-playlists?limit=2"), type: .GET) { request in
+            URLSession.shared.dataTask(with: request) { data, response, error in
+                guard let data = data, error == nil else {
+                    completionHandler(.failure(APIError.failedToGetData))
+                    return
+                }
+                
+                do {
+                    let result = try JSONDecoder().decode(FeaturedPlaylistsResponse.self, from: data)
+                    completionHandler(.success(result))
+                } catch {
+                    print(error.localizedDescription)
+                    completionHandler(.failure(error))
+                }
+            }
+            .resume()
+        }
+    }
+    
+    public func getRecommendedGenres(completionHandler: @escaping ((Result<RecommendedGenresResponse, Error>) -> ())) {
+        createRequest(with: URL(string: Constants.baseAPIURL + "/recommendations/available-genre-seeds"), type: .GET) { request in
+            URLSession.shared.dataTask(with: request) { data, response, error in
+                guard let data = data, error == nil else {
+                    completionHandler(.failure(APIError.failedToGetData))
+                    return
+                }
+                do {
+                    let result = try JSONDecoder().decode(RecommendedGenresResponse.self, from: data)
+                    completionHandler(.success(result))
+                } catch {
+                    print(error.localizedDescription)
+                    completionHandler(.failure(error))
+                }
+            }
+            .resume()
+        }
+    }
+    
+    public func getRecommendations(genres: Set<String>, completionHandler: @escaping((Result<String, Error>)-> ())) {
+        let seeds = genres.joined(separator: ",")
+        createRequest(with: URL(string: Constants.baseAPIURL + "/recommendations?seed_genres=\(seeds)"), type: .GET) { request in
+            URLSession.shared.dataTask(with: request) { data, response, error in
+                guard let data = data, error == nil else {
+                    completionHandler(.failure(APIError.failedToGetData))
+                    return
+                }
+                do {
+                    let result = try JSONSerialization.jsonObject(with: data, options: .allowFragments)
+                    print("FETCH RECOMMENDATIONS")
+                    print(result)
+                    completionHandler(.success("Success"))
+                } catch {
+                    print(error.localizedDescription)
+                    completionHandler(.failure(error))
+                }
+            }
+            .resume()
+        }
+    }
+    
     // MARK: Private
     
     enum APIError: Error {
@@ -45,7 +126,6 @@ final class APICaller {
         case GET
         case POST
     }
-    
     
     private func createRequest(with url: URL?, type: HTTPMethod, completionHandler: @escaping (URLRequest) -> ()) {
         guard let apiURL = url else { return }
